@@ -3,1455 +3,709 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>InterConsulta Egypt | Global Business Advisory & Consulting</title>
-<meta name="description" content="InterConsulta Egypt — global business advisory across finance, legal, cybersecurity, incorporation and infrastructure, operating from Zürich since 1964 and Cairo since 1983.">
-<meta name="google-site-verification" content="DCSAqeAFuqQ8jfcaPBxXKnK9UuDH9tTskb5IIULpkMw"/>
+<title>Carmen Crai — Curriculum Vitae</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-/* ============================================================
-   TOKENS
-   ============================================================ */
-:root{
-  --ink:        #0B1420;
-  --ink-2:      #101D30;
-  --ink-3:      #1A2C46;
-  --paper:      #F5F3EB;
-  --paper-2:    #ECE6D6;
-  --brass:      #B4915B;
-  --brass-light:#DCC494;
-  --brass-deep: #8A6A3E;
-  --steel:      #3B5D82;
-  --text:       #1C2430;
-  --muted:      #5C6572;
-  --muted-on-ink: rgba(245,243,235,.62);
-  --line:       rgba(11,20,32,.14);
-  --line-on-ink:rgba(245,243,235,.16);
-  --radius-sm:  3px;
-  --radius:     6px;
-  --radius-lg:  14px;
-  --serif:  'Fraunces', Georgia, serif;
-  --sans:   'Inter', -apple-system, sans-serif;
-  --mono:   'IBM Plex Mono', 'SFMono-Regular', monospace;
-  --arabic: 'Cairo', 'Inter', sans-serif;
-  --ease: cubic-bezier(.22,.68,0,1);
-
-  /* Blue gradients used throughout */
-  --gradient-blue: linear-gradient(135deg, #0f172a 0%, #0d6efd 55%, #0284c7 100%);
-  --gradient-blue-soft: linear-gradient(135deg, rgba(15,23,42,.9) 0%, rgba(13,110,253,.85) 55%, rgba(2,132,199,.85) 100%);
-  --gradient-blue-text: linear-gradient(120deg, #7cc4ff 0%, #4f9dff 45%, #0d6efd 100%);
-}
-
-*,*::before,*::after{ box-sizing: border-box; }
-html{ scroll-behavior:smooth; }
-body{
-  margin:0;
-  font-family:var(--sans);
-  color:var(--text);
-  background:var(--paper);
-  -webkit-font-smoothing:antialiased;
-}
-img{ max-width:100%; display:block; }
-a{ color:inherit; }
-button{ font-family:inherit; cursor:pointer; }
-::selection{ background:var(--brass-light); color:var(--ink); }
-:focus-visible{ outline:2px solid var(--brass); outline-offset:3px; }
-
-/* Arabic / RTL mode */
-body[dir="rtl"]{ font-family:var(--arabic); }
-body[dir="rtl"] .eyebrow, body[dir="rtl"] .hero-credentials,
-body[dir="rtl"] .stat-num, body[dir="rtl"] .svc-roman, body[dir="rtl"] .timeline-date,
-body[dir="rtl"] .svc-num-badge, body[dir="rtl"] .hq-addr, body[dir="rtl"] .brand-word,
-body[dir="rtl"] .footer-brand{ font-family:var(--mono); }
-body[dir="rtl"] h1, body[dir="rtl"] h2, body[dir="rtl"] h3, body[dir="rtl"] h4, body[dir="rtl"] h5,
-body[dir="rtl"] .pull-quote{ font-family:var(--arabic); font-style:normal; }
-body[dir="rtl"] .eyebrow::before{ order:2; }
-body[dir="rtl"] .timeline{ padding-left:0; padding-right:2.6rem; }
-body[dir="rtl"] .timeline::before{ left:auto; right:6px; }
-body[dir="rtl"] .timeline-item::before{ left:auto; right:-2.6rem; }
-body[dir="rtl"] .hq-addr i{ order:2; }
-body[dir="rtl"] .about-callout::before{ left:auto; right:0; }
-
-.lang-toggle{
-  background:none; border:1px solid var(--line-on-ink); color:var(--muted-on-ink);
-  font-family:var(--mono); font-size:.72rem; letter-spacing:.04em;
-  padding:.4rem .7rem; border-radius:2px; transition:all .25s var(--ease);
-}
-.lang-toggle:hover{ border-color:var(--brass); color:#fff; }
-
-.eyebrow{
-  font-family:var(--mono);
-  font-size:.72rem;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  color:var(--brass);
-  display:inline-flex;
-  align-items:center;
-  gap:.6rem;
-  font-weight:500;
-}
-.eyebrow::before{ content:''; width:22px; height:1px; background:var(--brass); display:inline-block; }
-
-.container{ max-width:1160px; margin:0 auto; padding:0 1.5rem; }
-
-/* ============================================================
-   HEADER / NAV
-   ============================================================ */
-.site-header{
-  position:sticky; top:0; z-index:1000;
-  background:var(--ink);
-  border-bottom:1px solid var(--line-on-ink);
-}
-.site-header::before{
-  content:'';
-  display:block; height:3px;
-  background:linear-gradient(90deg, #0d6efd, #7cc4ff 45%, #0284c7 90%);
-}
-.site-header.is-scrolled{ box-shadow:0 12px 30px rgba(0,0,0,.28); }
-
-.nav-row{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:1rem 1.5rem;
-}
-.brand{
-  display:flex; align-items:center; gap:.7rem;
-  background:none; border:0; padding:0; color:#fff;
-}
-.brand-mark{
-  width:38px; height:38px; border:1px solid var(--brass);
-  display:flex; align-items:center; justify-content:center;
-  font-family:var(--serif); font-weight:600; font-size:1.05rem;
-  color:var(--brass-light); flex-shrink:0;
-}
-.brand-word{
-  font-family:var(--serif); font-weight:600; font-size:1.18rem; letter-spacing:.01em;
-}
-.brand-word .accent{ color:var(--brass-light); font-style:italic; font-weight:500; }
-
-.nav-links{ display:flex; align-items:center; gap:.2rem; }
-.nav-link-btn{
-  position:relative;
-  background:none; border:0; color:var(--muted-on-ink);
-  font-size:.88rem; font-weight:500; letter-spacing:.01em;
-  padding:.55rem .8rem; transition:color .25s var(--ease);
-}
-.nav-link-btn::after{
-  content:''; position:absolute; left:.8rem; right:.8rem; bottom:.15rem; height:1px;
-  background:var(--brass-light); transform:scaleX(0); transform-origin:left;
-  transition:transform .3s var(--ease);
-}
-.nav-link-btn:hover{ color:#fff; }
-.nav-link-btn:hover::after,
-.nav-link-btn.active::after{ transform:scaleX(1); }
-.nav-link-btn.active{ color:#fff; }
-
-.nav-right{ display:flex; align-items:center; gap:1rem; }
-
-#google_translate_element{ font-size:0; }
-#google_translate_element select{
-  border:1px solid var(--line-on-ink) !important;
-  background:var(--ink-2) !important;
-  color:var(--muted-on-ink) !important;
-  font-family:var(--mono) !important;
-  font-size:.72rem !important;
-  border-radius:2px; padding:.35rem .5rem;
-}
-.goog-te-gadget-simple, .goog-logo-link, .goog-te-banner-frame, .skiptranslate img{ display:none !important; }
-.goog-te-gadget{ font-family:var(--mono) !important; color:transparent !important; font-size:0 !important; }
-.goog-te-gadget span{ display:none; }
-
-.nav-toggle{
-  display:none; background:none; border:1px solid var(--line-on-ink); color:#fff;
-  width:40px; height:36px; border-radius:2px; font-size:1.1rem;
-}
-
-@media (max-width: 960px){
-  .nav-links{
-    position:absolute; top:100%; left:0; right:0;
-    flex-direction:column; align-items:stretch; gap:0;
-    background:var(--ink); border-top:1px solid var(--line-on-ink);
-    max-height:0; overflow:hidden; transition:max-height .35s var(--ease);
+  :root{
+    --ink:#060d1c;
+    --deep:#0a2044;
+    --blue-1:#0e2f78;
+    --blue-2:#1d5fd6;
+    --blue-3:#4ea8ff;
+    --sky:#8fd3ff;
+    --orange-1:#123a8c;
+    --orange-2:#1d5fd6;
+    --orange-3:#bcdcff;
+    --grey-1:#3f4a5c;
+    --grey-2:#94a3b8;
+    --grey-3:#e2e8f0;
+    --paper:#f4f8fd;
+    --panel:#ffffff;
+    --line:#dbe6f3;
+    --muted:#5c7089;
+    --text:#12213a;
+    --radius:14px;
+    --ease:cubic-bezier(.2,.7,.2,1);
   }
-  .nav-links.open{ max-height:400px; }
-  .nav-link-btn{ text-align:left; padding:.9rem 1.5rem; border-bottom:1px solid var(--line-on-ink); }
-  .nav-link-btn::after{ display:none; }
-  .nav-right{ flex-wrap:wrap; padding:1rem 1.5rem; }
-  .nav-toggle{ display:flex; align-items:center; justify-content:center; }
-}
 
-/* ============================================================
-   VIEW SWITCHER
-   ============================================================ */
-main{ min-height:60vh; }
-.app-view{ display:none; }
-.app-view.active-view{ display:block; }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    color:var(--text);
+    background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{font-family:'Space Grotesk',sans-serif;}
+  .mono{font-family:'JetBrains Mono',monospace;}
 
-.reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
-.reveal.in-view{ opacity:1; transform:translateY(0); }
-@media (prefers-reduced-motion: reduce){
-  .reveal{ opacity:1 !important; transform:none !important; transition:none !important; }
-  html{ scroll-behavior:auto; }
-}
+  a{color:inherit;}
+  .container{max-width:1080px;margin:0 auto;padding:0 28px;}
 
-/* ============================================================
-   HERO
-   ============================================================ */
-.hero{
-  background:
-    radial-gradient(ellipse 900px 500px at 85% -10%, rgba(59,93,130,.35), transparent 60%),
-    linear-gradient(180deg, var(--ink) 0%, var(--ink-2) 100%);
-  color:#fff;
-  padding:4.5rem 0 3.5rem;
-  position:relative;
-  overflow:hidden;
-}
-.hero-grid{
-  display:grid; grid-template-columns:1.05fr .95fr; gap:3.5rem; align-items:center;
-}
-.hero-kicker{ margin-bottom:1.4rem; }
-.hero h1{
-  font-family:var(--serif); font-weight:600; font-style:normal;
-  font-size:clamp(2.3rem, 4.4vw, 3.6rem); line-height:1.06; letter-spacing:-.01em;
-  margin:0 0 1.3rem;
-}
-.hero h1 em{ font-style:italic; font-weight:500; color:var(--brass-light); }
-.hero-lead{
-  font-size:1.08rem; line-height:1.65; color:var(--muted-on-ink);
-  max-width:34rem; margin:0 0 2.1rem;
-}
-.hero-credentials{
-  display:flex; gap:1.6rem; flex-wrap:wrap; margin-bottom:2.2rem;
-  font-family:var(--mono); font-size:.78rem; color:var(--brass-light);
-}
-.hero-credentials span{ display:flex; align-items:center; gap:.5rem; }
-.hero-credentials i{ color:var(--brass); }
+  /* ---------- NAV ---------- */
+  .nav{
+    position:sticky;top:0;z-index:50;
+    background:linear-gradient(100deg,var(--ink),var(--grey-1) 60%,#2b3648);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.1);
+  }
+  .nav-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    min-height:66px;padding:12px 28px;max-width:1080px;margin:0 auto;
+  }
+  .brand{font-weight:700;font-size:1.3rem;letter-spacing:.2px;color:#fff;}
+  .brand span{color:var(--sky);}
+  .nav-links{display:flex;gap:6px;list-style:none;margin:0;padding:0;}
+  .nav-links a{
+    text-decoration:none;color:rgba(255,255,255,.85);font-size:1.02rem;font-weight:700;
+    padding:8px 12px;border-radius:8px;transition:all .25s var(--ease);
+  }
+  .nav-links a:hover{color:#fff;background:rgba(255,255,255,.15);}
+  .nav-toggle{display:none;background:none;border:none;font-size:1.4rem;color:#fff;cursor:pointer;}
 
-.btn-row{ display:flex; gap:.9rem; }
-.btn{
-  display:inline-flex; align-items:center; justify-content:center; gap:.55rem;
-  flex:1 1 0; padding:.95rem 1.5rem; border-radius:2px; font-weight:600; font-size:.9rem;
-  letter-spacing:.01em; border:1px solid transparent; transition:all .3s var(--ease);
-  text-decoration:none; text-align:center; white-space:nowrap;
-}
-.btn-brass{ background:var(--gradient-blue); color:#fff; }
-.btn-brass:hover{ filter:brightness(1.12); transform:translateY(-2px); box-shadow:0 12px 26px rgba(13,110,253,.35); }
-.btn-outline-light{ border-color:rgba(255,255,255,.35); color:#fff; background:transparent; }
-.btn-outline-light:hover{ border-color:#fff; background:rgba(255,255,255,.06); }
-.btn-outline-dark{ border-color:rgba(11,20,32,.3); color:var(--ink); background:transparent; }
-.btn-outline-dark:hover{ border-color:var(--ink); background:rgba(11,20,32,.05); }
+  @media(max-width:820px){
+    .nav-links{
+      position:absolute;top:100%;left:0;right:0;
+      flex-direction:column;background:var(--ink);
+      border-bottom:1px solid rgba(255,255,255,.1);
+      padding:10px 28px 18px;gap:2px;
+      display:none;
+    }
+    .nav-links.open{display:flex;}
+    .nav-toggle{display:block;}
+  }
 
-@media (max-width:480px){
-  .btn-row{ flex-direction:column; }
-  .btn{ width:100%; }
-}
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;overflow:hidden;color:#fff;
+    padding:128px 0 100px;
+    background:linear-gradient(125deg,var(--blue-1) 0%,var(--blue-2) 45%,#3d8ce6 72%,var(--blue-3) 100%);
+    background-size:280% 280%;
+    animation:driftGradient 16s ease infinite;
+    border-bottom:1px solid rgba(29,95,214,.25);
+  }
+  @keyframes driftGradient{
+    0%{background-position:0% 30%;}
+    50%{background-position:100% 70%;}
+    100%{background-position:0% 30%;}
+  }
+  .hero::before{
+    content:'';position:absolute;inset:0;
+    background:
+      radial-gradient(circle at 88% 8%, rgba(29,95,214,.32), transparent 40%),
+      radial-gradient(circle at 85% 15%, rgba(143,211,255,.3), transparent 45%),
+      radial-gradient(circle at 8% 95%, rgba(29,95,214,.45), transparent 50%);
+    pointer-events:none;
+  }
+  .hero::after{
+    content:'';position:absolute;left:-10%;top:-30%;width:60%;height:140%;
+    background:radial-gradient(circle, rgba(29,95,214,.18), transparent 60%);
+    filter:blur(10px);pointer-events:none;
+  }
+  .hero-grid{
+    position:absolute;inset:0;opacity:.10;pointer-events:none;
+    background-image:
+      linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px);
+    background-size:44px 44px;
+  }
+  .hero-inner{position:relative;z-index:2;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'JetBrains Mono',monospace;font-size:.74rem;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--orange-3);
+    border:1px solid rgba(29,95,214,.4);
+    background:rgba(29,95,214,.1);
+    padding:6px 14px;border-radius:999px;margin-bottom:24px;
+  }
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--orange-2);box-shadow:0 0 0 0 rgba(29,95,214,.6);animation:pulse 2s infinite;}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(29,95,214,.55);}
+    70%{box-shadow:0 0 0 8px rgba(29,95,214,0);}
+    100%{box-shadow:0 0 0 0 rgba(29,95,214,0);}
+  }
+  .hero h1{
+    font-size:clamp(2.7rem,5.6vw,4.1rem);
+    font-weight:700;line-height:1.08;margin:0 0 20px;
+    max-width:860px;letter-spacing:-.01em;
+  }
+  .hero h1 .line{
+    display:block;opacity:0;transform:translateY(28px);
+    animation:lineUp .8s var(--ease) forwards;
+  }
+  .hero h1 .line:nth-child(1){animation-delay:.15s;}
+  .hero h1 .line:nth-child(2){animation-delay:.4s;}
+  .hero h1 .line:nth-child(3){animation-delay:.65s;}
+  @keyframes lineUp{
+    to{opacity:1;transform:translateY(0);}
+  }
+  .hero h1 em{
+    font-style:normal;
+    background:linear-gradient(100deg,var(--orange-3),var(--sky),var(--orange-3));
+    background-size:220% auto;
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    animation:shine 5s linear infinite;
+  }
+  @keyframes shine{
+    to{background-position:-220% center;}
+  }
+  .hero p.lead{
+    font-size:1.3rem;color:rgba(255,255,255,.85);
+    max-width:600px;line-height:1.65;margin:0 0 36px;
+  }
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:60px;}
+  .btn{
+    font-weight:600;font-size:.92rem;padding:14px 26px;border-radius:10px;
+    text-decoration:none;transition:all .25s var(--ease);border:1px solid transparent;
+    cursor:pointer;display:inline-flex;align-items:center;gap:8px;
+  }
+  .btn-primary{background:linear-gradient(120deg,#f97316,#9a3412);color:#fff;box-shadow:0 10px 24px rgba(154,52,18,.4);}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(154,52,18,.5);}
+  .btn-ghost{border-color:rgba(255,255,255,.35);color:#fff;}
+  .btn-ghost:hover{background:rgba(255,255,255,.1);border-color:#fff;}
 
-/* Dossier frame carousel */
-.dossier{
-  position:relative; border:1px solid var(--line-on-ink);
-  background:var(--ink-3); padding:14px; border-radius:2px;
-}
-.dossier::before,.dossier::after{
-  content:''; position:absolute; width:22px; height:22px; border:2px solid #4f9dff;
-  z-index:2;
-}
-.dossier::before{ top:-1px; left:-1px; border-right:0; border-bottom:0; }
-.dossier::after{ bottom:-1px; right:-1px; border-left:0; border-top:0; }
-.dossier-frame{
-  position:relative; height:340px; overflow:hidden; border-radius:1px; background:#0d1522;
-}
-.dossier-slide{
-  position:absolute; inset:0; opacity:0; transition:opacity .8s var(--ease);
-  display:flex; align-items:center; justify-content:center;
-}
-.dossier-slide.active{ opacity:1; }
-.dossier-slide img{ width:100%; height:100%; object-fit:cover; }
-.dossier-fallback{
-  display:none; width:100%; height:100%; align-items:center; justify-content:center;
-  flex-direction:column; gap:.6rem; color:var(--brass-light);
-  background:
-    repeating-linear-gradient(135deg, rgba(180,145,91,.06) 0 2px, transparent 2px 18px),
-    linear-gradient(160deg, #16233a, #0d1522);
-}
-.dossier-fallback i{ font-size:1.8rem; }
-.dossier-fallback span{ font-family:var(--mono); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted-on-ink); text-align:center; padding:0 1.5rem; }
-.dossier-caption{
-  position:absolute; left:0; right:0; bottom:0; padding:.9rem 1.1rem;
-  background:linear-gradient(0deg, rgba(0,0,0,.65), transparent);
-  font-family:var(--mono); font-size:.72rem; color:#fff; letter-spacing:.03em;
-}
-.dossier-dots{ display:flex; gap:.5rem; justify-content:center; padding-top:.9rem; }
-.dossier-dots button{
-  width:22px; height:3px; background:rgba(255,255,255,.22); border:0; padding:0; transition:background .3s;
-}
-.dossier-dots button.active{ background:var(--brass-light); }
+  .stat-row{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+    border-top:1px solid rgba(255,255,255,.18);padding-top:34px;
+  }
+  .stat{padding-right:20px;border-left:2px solid var(--orange-2);padding-left:14px;}
+  .stat .num{font-family:'Space Grotesk',sans-serif;font-size:2.3rem;font-weight:700;color:#fff;}
+  .stat .label{font-size:.78rem;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:.08em;margin-top:4px;}
+  @media(max-width:700px){.stat-row{grid-template-columns:repeat(2,1fr);row-gap:24px;}}
 
-/* ============================================================
-   STATS STRIP
-   ============================================================ */
-.stats-strip{
-  background:var(--gradient-blue); border-top:1px solid var(--line-on-ink); border-bottom:1px solid var(--line-on-ink);
-  padding:2.2rem 0;
-}
-.stats-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; }
-.stat{ text-align:center; padding:0 .5rem; }
-.stat-num{
-  font-family:var(--mono); font-weight:600; font-size:clamp(1.7rem,3vw,2.3rem);
-  color:var(--brass-light); font-variant-numeric:tabular-nums;
-}
-.stat-label{
-  font-size:.76rem; color:var(--muted-on-ink); letter-spacing:.03em; margin-top:.35rem;
-}
-@media (max-width: 760px){ .stats-grid{ grid-template-columns:repeat(2,1fr); row-gap:1.8rem; } }
+  /* ---------- SECTION SHELL ---------- */
+  section.block{padding:86px 0;}
+  section.block.alt{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .kicker{
+    font-family:'JetBrains Mono',monospace;font-size:.76rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--blue-2);margin-bottom:10px;display:block;
+  }
+  .sec-title{font-size:clamp(1.9rem,3.2vw,2.4rem);font-weight:700;margin:0 0 14px;color:var(--ink);}
+  .sec-sub{color:var(--muted);max-width:640px;line-height:1.65;margin-bottom:48px;font-size:1.12rem;}
 
-/* ============================================================
-   SECTIONS (light)
-   ============================================================ */
-.section{ padding:4.5rem 0; }
-.section-tight{ padding:3rem 0; }
-.section-title{
-  font-family:var(--serif); font-weight:600; font-size:clamp(1.8rem,3.2vw,2.4rem);
-  color:var(--ink); margin:.6rem 0 0; position:relative; display:inline-block; padding-bottom:.9rem;
-}
-.section-title::after{
-  content:''; position:absolute; left:0; bottom:0; width:64px; height:4px; border-radius:3px;
-  background:var(--gradient-blue);
-}
-body[dir="rtl"] .section-title::after{ left:auto; right:0; }
-.section-head{ margin-bottom:2.6rem; max-width:38rem; }
-.section-sub{ color:var(--muted); font-size:1.02rem; margin-top:.9rem; line-height:1.6; }
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease);}
+  .reveal.in{opacity:1;transform:translateY(0);}
 
-.pull-quote{
-  font-family:var(--serif); font-style:italic; font-weight:500;
-  font-size:clamp(1.3rem,2.4vw,1.8rem); line-height:1.5; color:var(--ink);
-  position:relative; max-width:44rem;
-}
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:start;}
+  .about-grid p{line-height:1.8;color:var(--text);font-size:1.12rem;margin:0 0 16px;}
+  .about-grid strong{color:var(--blue-1);}
+  .pillar-list{display:flex;flex-direction:column;gap:16px;}
+  .pillar{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px 22px;display:flex;gap:16px;align-items:flex-start;
+    transition:all .3s var(--ease);
+  }
+  .pillar:hover{border-color:var(--blue-3);box-shadow:0 14px 30px rgba(18,58,140,.08);transform:translateY(-3px);}
+  .pillar .ic{
+    flex:0 0 40px;height:40px;width:40px;border-radius:10px;
+    background:linear-gradient(135deg,var(--blue-1),var(--blue-3));
+    display:flex;align-items:center;justify-content:center;color:#fff;
+  }
+  .pillar h4{margin:0 0 4px;font-size:1.1rem;font-family:'Space Grotesk',sans-serif;}
+  .pillar p{margin:0;font-size:.98rem;color:var(--muted);line-height:1.5;}
+  @media(max-width:820px){.about-grid{grid-template-columns:1fr;}}
 
-/* Full-width justified mission statement */
-.pull-quote-full{
-  max-width:none; width:100%; text-align:justify;
-  text-align-last:left; padding:2.4rem 2.6rem; border-radius:var(--radius);
-  background:var(--gradient-blue); color:#fff;
-  box-shadow:0 20px 45px rgba(13,110,253,.18);
-}
-body[dir="rtl"] .pull-quote-full{ text-align-last:right; }
+  /* ---------- TIMELINE / EXPERIENCE ---------- */
+  .timeline{position:relative;padding-left:34px;}
+  .timeline::before{
+    content:'';position:absolute;left:10px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(180deg,var(--blue-3),var(--line) 90%);
+  }
+  .tl-item{position:relative;padding-bottom:40px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-dot{
+    position:absolute;left:-34px;top:4px;width:22px;height:22px;border-radius:50%;
+    background:var(--panel);border:3px solid var(--blue-2);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .tl-dot::after{content:'';width:6px;height:6px;border-radius:50%;background:var(--blue-2);}
+  .tl-dot.current{border-color:var(--orange-2);box-shadow:0 0 0 4px rgba(29,95,214,.15);}
+  .tl-dot.current::after{background:var(--orange-2);animation:pulse 2s infinite;}
+  .tl-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 26px;transition:all .3s var(--ease);
+  }
+  .tl-card:hover{border-color:var(--blue-3);box-shadow:0 16px 34px rgba(18,58,140,.09);}
+  .tl-card.current{border-color:var(--orange-2);background:linear-gradient(135deg,#eef5ff,#ffffff 55%);}
+  .tl-card.current:hover{box-shadow:0 16px 34px rgba(14,47,120,.14);}
+  .tl-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:10px;}
+  .tl-role{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;color:var(--ink);}
+  .tl-company{color:var(--blue-2);font-weight:600;font-size:1.02rem;}
+  .tl-tag{
+    font-family:'JetBrains Mono',monospace;font-size:.76rem;letter-spacing:.05em;
+    background:#eaf3fe;color:var(--blue-1);padding:5px 10px;border-radius:6px;white-space:nowrap;
+  }
+  .tl-tag.current{background:linear-gradient(120deg,var(--orange-2),var(--orange-1));color:#fff;}
+  .tl-card ul{margin:12px 0 0;padding-left:18px;color:var(--muted);font-size:1.02rem;line-height:1.7;}
 
-/* Pop badges: Easy / Simple / Cheap / Fast */
-.pop-row{ display:grid; grid-template-columns:repeat(4,1fr); gap:1.1rem; margin-top:2.8rem; }
-.pop-badge{
-  font-family:var(--serif); font-style:italic; font-weight:700; font-size:clamp(1.2rem,2vw,1.6rem);
-  letter-spacing:.01em; text-align:center;
-  color:#fff; padding:1.1rem 1rem; border-radius:14px; width:100%;
-  background:var(--gradient-blue);
-  box-shadow:0 14px 30px rgba(13,110,253,.38);
-  border:1px solid rgba(255,255,255,.18);
-  transform:scale(0); opacity:0;
-  transition:transform .3s var(--ease), box-shadow .3s var(--ease);
-}
-.pop-badge:hover{ transform:scale(1.05) !important; box-shadow:0 18px 38px rgba(13,110,253,.5); }
-.pop-badge.pop-in{ animation:popIn .7s var(--ease) forwards; }
-@keyframes popIn{
-  0%{ transform:scale(0); opacity:0; }
-  55%{ transform:scale(1.15); opacity:1; }
-  75%{ transform:scale(.95); }
-  100%{ transform:scale(1); opacity:1; }
-}
-@media (prefers-reduced-motion: reduce){
-  .pop-badge{ transform:none; opacity:1; }
-  .pop-badge.pop-in{ animation:none; }
-}
-@media (max-width: 720px){
-  .pop-row{ grid-template-columns:repeat(2,1fr); }
-}
+  /* ---------- SKILLS ---------- */
+  .skill-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .skill-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px;}
+  .skill-card h4{
+    margin:0 0 18px;font-size:1.05rem;font-family:'JetBrains Mono',monospace;
+    text-transform:uppercase;letter-spacing:.06em;color:var(--blue-1);
+    display:flex;align-items:center;gap:10px;
+  }
+  .skill-card h4::before{content:'';width:8px;height:8px;border-radius:2px;background:var(--blue-2);}
+  .chip-row{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    font-size:.94rem;font-weight:500;color:var(--text);
+    background:var(--paper);border:1px solid var(--line);
+    padding:7px 13px;border-radius:999px;transition:all .25s var(--ease);
+  }
+  .chip:hover{background:var(--blue-2);color:#fff;border-color:var(--blue-2);transform:translateY(-2px);}
+  @media(max-width:900px){.skill-groups{grid-template-columns:1fr;}}
 
-/* chips row */
-.chip-row{ display:flex; gap:.7rem; flex-wrap:wrap; margin-top:2rem; }
-.chip{
-  font-family:var(--mono); font-size:.76rem; letter-spacing:.02em;
-  border:1px solid var(--line); background:#fff; color:var(--text);
-  padding:.55rem 1rem; border-radius:2px; transition:all .25s var(--ease);
-}
-.chip:hover{ border-color:var(--brass); color:var(--brass-deep); transform:translateY(-2px); }
+  /* ---------- ACHIEVEMENTS ---------- */
+  .ach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;}
+  .ach-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;position:relative;overflow:hidden;transition:all .3s var(--ease);
+  }
+  .ach-card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(18,58,140,.1);border-color:var(--blue-3);}
+  .ach-num{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.6rem;
+    background:linear-gradient(135deg,var(--blue-1),var(--orange-2));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    margin-bottom:10px;display:block;
+  }
+  .ach-card h4{margin:0 0 8px;font-size:1.14rem;font-family:'Space Grotesk',sans-serif;}
+  .ach-card p{margin:0;font-size:.98rem;color:var(--muted);line-height:1.6;}
+  .ach-link{
+    margin-top:12px;display:inline-flex;align-items:center;gap:6px;
+    font-size:.82rem;font-weight:600;color:var(--blue-2);text-decoration:none;
+  }
+  .ach-link:hover{text-decoration:underline;}
 
-/* card */
-.card{
-  background:#fff; border:1px solid var(--line); border-radius:var(--radius);
-  padding:2.2rem;
-}
+  /* ---------- EDUCATION ---------- */
+  .edu-list{display:flex;flex-direction:column;gap:16px;}
+  .edu-item{
+    display:flex;gap:20px;align-items:flex-start;
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px 24px;transition:all .3s var(--ease);
+  }
+  .edu-item:hover{border-color:var(--blue-3);box-shadow:0 14px 28px rgba(18,58,140,.08);}
+  .edu-badge{
+    flex:0 0 46px;height:46px;border-radius:10px;
+    background:linear-gradient(135deg,var(--blue-1),var(--blue-3));
+    color:#fff;display:flex;align-items:center;justify-content:center;
+    font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.95rem;
+  }
+  .edu-degree{font-weight:700;font-family:'Space Grotesk',sans-serif;font-size:1.1rem;margin-bottom:2px;}
+  .edu-school{color:var(--blue-2);font-size:.98rem;font-weight:600;}
+  .edu-note{color:var(--muted);font-size:.95rem;margin-top:6px;line-height:1.55;}
 
-/* ============================================================
-   ABOUT
-   ============================================================ */
-.about-grid{ display:grid; grid-template-columns:1.4fr 1fr; gap:1.6rem; }
-.about-callout{
-  background:var(--gradient-blue); color:#fff; border-radius:var(--radius);
-  padding:2.2rem; border:1px solid var(--ink-3);
-  box-shadow:0 20px 40px rgba(13,110,253,.22);
-  position:relative; overflow:hidden;
-}
-.about-callout::before{
-  content:''; position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--brass-light);
-}
-.about-grid p{ color:var(--muted); line-height:1.75; }
-.about-grid h3{ font-family:var(--serif); font-size:1.4rem; color:var(--ink); margin:0 0 1rem; }
-.about-callout h4{ font-family:var(--serif); font-weight:600; color:#fff; margin:0 0 2.4rem; font-size:1.15rem; }
-.about-callout p{ color:#fff !important; line-height:1.75; margin:0; font-size:1.08rem; font-weight:500; }
+  /* ---------- CONTACT ---------- */
+  .contact-wrap{
+    background:linear-gradient(125deg,var(--blue-1) 0%,var(--blue-2) 50%,#3d8ce6 78%,var(--orange-1) 130%);
+    border-radius:22px;padding:64px 52px;color:#fff;position:relative;overflow:hidden;
+    box-shadow:0 30px 70px rgba(29,95,214,.3);
+  }
+  .contact-wrap::before{
+    content:'';position:absolute;inset:0;
+    background:
+      radial-gradient(circle at 92% 8%, rgba(29,95,214,.32), transparent 42%),
+      radial-gradient(circle at 90% 90%, rgba(143,211,255,.22), transparent 45%);
+  }
+  .contact-eyebrow{
+    position:relative;z-index:2;font-family:'JetBrains Mono',monospace;font-size:.74rem;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--orange-3);margin-bottom:14px;display:block;
+  }
+  .contact-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr 1fr;gap:48px;}
+  .contact-inner h3{font-size:2.3rem;margin:0 0 14px;font-weight:700;letter-spacing:-.01em;}
+  .contact-inner p.msg{color:rgba(255,255,255,.8);line-height:1.75;max-width:420px;font-size:1.12rem;}
+  .contact-methods{display:flex;flex-direction:column;gap:14px;}
+  .cmethod{
+    display:flex;align-items:center;gap:14px;
+    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);
+    border-radius:12px;padding:15px 18px;text-decoration:none;color:#fff;
+    transition:all .25s var(--ease);
+  }
+  .cmethod:hover{background:rgba(255,255,255,.16);border-color:var(--orange-3);transform:translateX(5px);}
+  .cmethod .ic{flex:0 0 20px;font-weight:700;font-family:'Space Grotesk',sans-serif;font-size:.95rem;}
+  .cmethod .t{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.62);font-family:'JetBrains Mono',monospace;}
+  .cmethod .v{font-weight:600;font-size:1.06rem;}
+  @media(max-width:820px){.contact-inner{grid-template-columns:1fr;}.contact-wrap{padding:44px 28px;}}
 
-@media (max-width: 900px){ .about-grid{ grid-template-columns:1fr; } }
+  footer{
+    min-height:66px;display:flex;align-items:center;justify-content:center;
+    padding:0 20px;text-align:center;color:rgba(255,255,255,.8);font-size:1.05rem;font-weight:700;
+    background:linear-gradient(100deg,var(--ink),var(--grey-1) 60%,#2b3648);
+    border-top:2px solid var(--blue-3);
+  }
+  footer span{color:var(--sky);}
 
-/* Timeline */
-.timeline{ position:relative; margin-top:1rem; padding-left:2.6rem; }
-.timeline::before{ content:''; position:absolute; left:5px; top:6px; bottom:6px; width:3px; border-radius:2px; background:var(--gradient-blue); }
-.timeline-item{ position:relative; padding-bottom:2.4rem; }
-.timeline-item:last-child{ padding-bottom:0; }
-.timeline-item::before{
-  content:''; position:absolute; left:-2.65rem; top:.3rem; width:13px; height:13px;
-  border-radius:50%; background:var(--gradient-blue); border:2px solid var(--paper);
-  box-shadow:0 0 0 2px #0d6efd;
-}
-.timeline-date{
-  font-family:var(--mono); font-size:.82rem; color:var(--brass-deep); font-weight:600;
-  letter-spacing:.03em; margin-bottom:.4rem; display:block;
-}
-.timeline-item h5{ font-family:var(--serif); font-size:1.15rem; margin:0 0 .5rem; color:var(--ink); }
-.timeline-item p{ color:var(--muted); line-height:1.65; margin:0; max-width:38rem; }
-
-/* ============================================================
-   SERVICES INDEX
-   ============================================================ */
-.services-shell{
-  display:grid; grid-template-columns:340px 1fr; gap:0;
-  border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:#fff;
-}
-.services-index{ background:var(--paper-2); border-right:1px solid var(--line); max-height:560px; overflow-y:auto; }
-.svc-index-btn{
-  position:relative; display:flex; align-items:baseline; gap:.9rem; width:100%; text-align:left;
-  background:none; border:0; border-bottom:1px solid var(--line);
-  padding:1rem 1.3rem; transition:background .25s var(--ease);
-}
-.svc-index-btn:hover{ background:rgba(13,110,253,.06); }
-.svc-index-btn.active{ background:#fff; padding-left:calc(1.3rem - 3px); }
-.svc-index-btn.active::before{
-  content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--gradient-blue);
-}
-body[dir="rtl"] .svc-index-btn.active::before{ left:auto; right:0; }
-body[dir="rtl"] .svc-index-btn.active{ padding-left:1.3rem; padding-right:calc(1.3rem - 3px); }
-.svc-roman{ font-family:var(--mono); font-size:.82rem; color:var(--brass-deep); font-weight:600; flex-shrink:0; width:1.8rem; }
-.svc-index-title{ font-size:.88rem; font-weight:600; color:var(--ink); line-height:1.35; }
-.svc-index-btn.active .svc-index-title{ color:var(--brass-deep); }
-
-.services-detail{ padding:2.6rem; position:relative; }
-.svc-panel{ display:none; }
-.svc-panel.active{ display:grid; grid-template-columns:1.1fr .9fr; gap:2.2rem; align-items:center; animation:svcIn .32s var(--ease); }
-@keyframes svcIn{ from{ opacity:0; transform:translateY(10px);} to{ opacity:1; transform:translateY(0);} }
-.svc-num-badge{ font-family:var(--mono); color:var(--brass); font-size:.8rem; letter-spacing:.05em; margin-bottom:.6rem; display:block; }
-.svc-panel h3{ font-family:var(--serif); font-size:1.55rem; color:var(--ink); margin:0 0 1rem; line-height:1.25; }
-.svc-panel p{ color:var(--muted); line-height:1.7; margin:0; }
-.svc-img{ height:230px; border-radius:var(--radius-sm); overflow:hidden; border:1px solid var(--line); }
-.svc-img img{ width:100%; height:100%; object-fit:cover; transition:transform .5s var(--ease); }
-.svc-img:hover img{ transform:scale(1.05); }
-.svc-fallback{
-  display:none; width:100%; height:100%; align-items:center; justify-content:center; flex-direction:column; gap:.5rem;
-  background:linear-gradient(160deg,#EDE7D8,#E3DBC6); color:var(--brass-deep);
-}
-.svc-fallback i{ font-size:1.6rem; }
-.svc-fallback span{ font-family:var(--mono); font-size:.68rem; text-align:center; padding:0 1rem; letter-spacing:.03em; }
-
-.services-controls{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:1rem 2.6rem; border-top:1px solid var(--line); background:var(--paper);
-}
-.svc-nav-btn{
-  width:38px; height:38px; border:1px solid var(--line); background:#fff; border-radius:50%;
-  display:flex; align-items:center; justify-content:center; transition:all .25s var(--ease);
-}
-.svc-nav-btn:hover{ border-color:var(--brass); color:var(--brass-deep); }
-.svc-progress{ font-family:var(--mono); font-size:.76rem; color:var(--muted); }
-
-@media (max-width: 900px){
-  .services-shell{ grid-template-columns:1fr; }
-  .services-index{ max-height:220px; }
-  .svc-panel.active{ grid-template-columns:1fr; }
-  .services-detail{ padding:1.6rem; }
-  .services-controls{ padding:1rem 1.6rem; }
-}
-
-/* ============================================================
-   CAREERS
-   ============================================================ */
-.careers-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:2.6rem; align-items:start; }
-.careers-copy p{ color:var(--muted); line-height:1.75; }
-.careers-copy .pull-quote{ margin-bottom:1.4rem; font-size:1.2rem; }
-
-.form-card{ background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:2.4rem; }
-.form-card h4{ font-family:var(--serif); font-size:1.35rem; margin:0 0 .4rem; color:var(--ink); }
-.form-card .sub{ color:var(--muted); font-size:.88rem; margin-bottom:1.6rem; }
-
-.field{ margin-bottom:1.2rem; }
-.field label{
-  display:block; font-family:var(--mono); font-size:.72rem; letter-spacing:.05em; text-transform:uppercase;
-  color:var(--muted); margin-bottom:.45rem;
-}
-.field input[type=text], .field input[type=email], .field select, .field textarea{
-  width:100%; padding:.8rem .9rem; border:1px solid #C9C2AC; border-radius:2px;
-  background:#fff; font-family:var(--sans); font-size:.94rem; color:var(--text);
-  transition:border-color .25s, box-shadow .25s;
-}
-.field textarea{ resize:vertical; min-height:5.5rem; line-height:1.55; }
-.field input:focus, .field select:focus, .field textarea:focus{
-  border-color:var(--brass); box-shadow:0 0 0 3px rgba(180,145,91,.18); outline:none;
-}
-.field-hint{ margin:.5rem 0 0; font-size:.76rem; color:var(--muted); line-height:1.5; }
-.field-row{ display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; }
-@media (max-width:560px){ .field-row{ grid-template-columns:1fr; } }
-
-.submit-btn{
-  width:100%; padding:.95rem; background:var(--gradient-blue); color:#fff; border:0; border-radius:2px;
-  font-weight:600; letter-spacing:.02em; font-size:.92rem; display:flex; align-items:center; justify-content:center; gap:.6rem;
-  box-shadow:0 12px 26px rgba(13,110,253,.28);
-  transition:transform .25s var(--ease), box-shadow .25s var(--ease), filter .25s;
-}
-.submit-btn:hover{ filter:brightness(1.1); transform:translateY(-2px); box-shadow:0 16px 32px rgba(13,110,253,.38); }
-.submit-btn:disabled{ opacity:.75; cursor:not-allowed; transform:none; }
-.mailto-note{ margin:.7rem 0 0; font-size:.76rem; color:var(--muted); text-align:center; line-height:1.5; }
-
-.alert-box{
-  border-radius:2px; padding:1rem 1.2rem; margin-bottom:1.4rem; font-size:.9rem; line-height:1.55;
-  border-left:3px solid var(--brass); background:#FBF6EA; color:#5B4A28; display:none;
-}
-.alert-box.show{ display:block; animation:svcIn .4s var(--ease); }
-
-@media (max-width: 900px){ .careers-grid{ grid-template-columns:1fr; } }
-
-/* ============================================================
-   CONTACT
-   ============================================================ */
-.contact-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem; margin-bottom:2.6rem; }
-.contact-card{
-  position:relative; background:#fff; border:1px solid var(--line); border-top:0;
-  border-radius:0 0 var(--radius-sm) var(--radius-sm); padding:1.8rem 1.4rem; text-align:center;
-  transition:transform .3s var(--ease), box-shadow .3s var(--ease);
-}
-.contact-card::before{
-  content:''; position:absolute; top:0; left:0; right:0; height:3px; background:var(--gradient-blue);
-}
-.contact-card:hover{ transform:translateY(-4px); box-shadow:0 16px 30px rgba(11,20,32,.08); }
-.contact-card i{ font-size:1.5rem; color:var(--brass-deep); margin-bottom:.7rem; display:block; }
-.contact-card h5{ font-family:var(--serif); font-size:1.05rem; margin:0 0 .3rem; color:var(--ink); }
-.contact-card .role{ font-size:.78rem; color:var(--muted); margin-bottom:.7rem; }
-.contact-card a{
-  display:block; font-size:clamp(.68rem,1.9vw,.78rem); text-decoration:none; color:var(--steel); font-weight:600;
-  word-break:break-word; overflow-wrap:anywhere; line-height:1.5;
-}
-.contact-card a.tel{ color:var(--muted); font-weight:500; margin-top:.3rem; }
-
-.contact-card.one-line{ text-align:left; }
-.contact-line{
-  display:flex; align-items:center; justify-content:center; flex-wrap:wrap;
-  row-gap:.25rem; column-gap:.5rem; font-size:clamp(.66rem,1.9vw,.78rem);
-}
-.contact-line a{ display:inline; white-space:normal; word-break:break-word; overflow-wrap:anywhere; max-width:100%; }
-.contact-line .sep{ color:var(--line); flex-shrink:0; }
-body[dir="rtl"] .contact-card.one-line{ text-align:right; }
-
-@media (max-width: 900px){ .contact-grid{ grid-template-columns:repeat(2,1fr); } }
-@media (max-width: 560px){ .contact-grid{ grid-template-columns:1fr; } }
-
-.hq-grid{ display:grid; grid-template-columns:.9fr 1.1fr; gap:2.4rem; align-items:center; }
-.hq-grid h4{ font-family:var(--serif); font-size:1.5rem; color:var(--ink); margin:0 0 .8rem; }
-.hq-grid p{ color:var(--muted); line-height:1.7; }
-.hq-addr{ font-family:var(--mono); font-size:.82rem; color:var(--brass-deep); display:flex; gap:.6rem; align-items:flex-start; margin-top:1rem; }
-.map-frame{ border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:#fff; }
-.map-frame .map-label{ font-family:var(--mono); font-size:.72rem; text-align:center; padding:.8rem; color:var(--muted); border-bottom:1px solid var(--line); }
-.map-img-wrap{ position:relative; height:280px; }
-.map-img-wrap img{ width:100%; height:100%; object-fit:cover; }
-.map-fallback{
-  display:none; width:100%; height:100%; align-items:center; justify-content:center; flex-direction:column; gap:.6rem;
-  background:linear-gradient(160deg,#EDE7D8,#E3DBC6); color:var(--brass-deep);
-}
-.map-fallback i{ font-size:1.8rem; }
-.map-fallback span{ font-family:var(--mono); font-size:.72rem; }
-
-@media (max-width: 900px){ .hq-grid{ grid-template-columns:1fr; } }
-
-/* ============================================================
-   FOOTER
-   ============================================================ */
-footer{
-  background:
-    radial-gradient(ellipse 700px 260px at 15% 0%, rgba(13,110,253,.16), transparent 65%),
-    var(--ink);
-  color:var(--muted-on-ink); padding:2.4rem 0; margin-top:2rem;
-  border-top:1px solid var(--line-on-ink);
-}
-.footer-row{ display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1.2rem; }
-.footer-link{ color:var(--muted-on-ink); text-decoration:none; font-size:.85rem; transition:color .25s; }
-.footer-link:hover{ color:#fff; }
-.footer-links{ display:flex; gap:1.8rem; flex-wrap:wrap; }
-.footer-brand{ font-family:var(--mono); font-size:.74rem; letter-spacing:.03em; color:var(--muted-on-ink); }
-
-.to-top{
-  position:fixed; right:1.4rem; bottom:1.4rem; width:44px; height:44px; border-radius:50%;
-  background:var(--brass); color:var(--ink); border:0; display:flex; align-items:center; justify-content:center;
-  box-shadow:0 10px 24px rgba(0,0,0,.25); opacity:0; pointer-events:none; transform:translateY(10px);
-  transition:all .35s var(--ease); z-index:900;
-}
-.to-top.show{ opacity:1; pointer-events:auto; transform:translateY(0); }
-
-/* ============================================================
-   RESPONSIVE — HERO
-   ============================================================ */
-@media (max-width: 960px){
-  .hero-grid{ grid-template-columns:1fr; gap:2.2rem; }
-}
+  @media(prefers-reduced-motion:reduce){
+    .hero h1 .line{animation:none;opacity:1;transform:none;}
+    .hero h1 em{animation:none;}
+    .hero{animation:none;}
+    .reveal{transition:none;}
+  }
 </style>
 </head>
 <body>
 
-<header class="site-header" id="siteHeader">
-  <div class="container nav-row">
-    <button class="brand" onclick="switchPortalView('home')">
-      <span class="brand-mark">IC</span>
-      <span class="brand-word">InterConsulta <span class="accent">Egypt</span></span>
-    </button>
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">Carmen <span>Crai</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Overview</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Proof of Work</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <i class="bi bi-list"></i>
-    </button>
-
-    <div class="nav-links" id="navLinks">
-      <button class="nav-link-btn active" id="btn-home" onclick="switchPortalView('home')" data-i18n="nav.home">Home</button>
-      <button class="nav-link-btn" id="btn-about" onclick="switchPortalView('about')" data-i18n="nav.about">About &amp; History</button>
-      <button class="nav-link-btn" id="btn-services" onclick="switchPortalView('services')" data-i18n="nav.services">Our Services</button>
-      <button class="nav-link-btn" id="btn-careers" onclick="switchPortalView('careers')" data-i18n="nav.careers">Careers</button>
-      <button class="nav-link-btn" id="btn-contact" onclick="switchPortalView('contact')" data-i18n="nav.contact">Contact &amp; Visit</button>
-      <div class="nav-right">
-        <button class="lang-toggle" id="langToggle" type="button">EN / عربي</button>
-        <div id="google_translate_element"></div>
-      </div>
+<header class="hero">
+  <div class="hero-grid"></div>
+  <div class="container hero-inner">
+    <span class="eyebrow"><span class="dot"></span>Available for new opportunities</span>
+    <h1><span class="line">Professional rigor.</span><span class="line"><em>Uncompromising quality.</em></span><span class="line">Simple, working solutions.</span></h1>
+    <p class="lead">Carmen Crai — a cross-industry analyst and quality specialist with 12+ years across Automotive, Finance, Oil &amp; Gas and Sales, turning complex processes into clear, dependable outcomes.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Get in touch</a>
+      <a href="#experience" class="btn btn-ghost">View experience</a>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="num" data-count="12" data-suffix="+">0</div><div class="label">Years Experience</div></div>
+      <div class="stat"><div class="num" data-count="6">0</div><div class="label">Companies</div></div>
+      <div class="stat"><div class="num" data-count="4">0</div><div class="label">Industries</div></div>
+      <div class="stat"><div class="num" data-count="4">0</div><div class="label">Degrees / Diplomas</div></div>
     </div>
   </div>
 </header>
 
-<main>
+<section class="block" id="about">
   <div class="container">
+    <span class="kicker reveal">Overview</span>
+    <h2 class="sec-title reveal">A career built on quality, clarity, and results</h2>
+    <div class="about-grid">
+      <div class="reveal">
+        <p>Carmen brings over <strong>12 years of cross-industry experience</strong> spanning Automotive, Finance, Oil &amp; Gas, and Sales — with roles ranging from software quality assurance and configuration management, to web application support for HR technology platforms, to hands-on data analysis and client-facing sales.</p>
+        <p>What connects every role is the same standard: <strong>professional</strong> delivery, <strong>quality</strong>-first process discipline, and a preference for <strong>simple</strong>, usable solutions over unnecessary complexity — whether that means preparing an ASPICE audit, scripting a Python data pipeline, or closing a client conversation.</p>
+      </div>
+      <div class="pillar-list">
+        <div class="pillar">
+          <div class="ic">P</div>
+          <div><h4>Professional</h4><p>Structured, audit-ready delivery across regulated industries like automotive and finance.</p></div>
+        </div>
+        <div class="pillar">
+          <div class="ic">Q</div>
+          <div><h4>Quality</h4><p>ASPICE audit preparation, configuration management, and process documentation as second nature.</p></div>
+        </div>
+        <div class="pillar">
+          <div class="ic">S</div>
+          <div><h4>Simple</h4><p>Turns complex data and systems into clear, usable outputs — reports, dashboards, and decisions.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- ============ HOME ============ -->
-    <section id="view-home" class="app-view active-view">
+<section class="block alt" id="experience">
+  <div class="container">
+    <span class="kicker reveal">Career History</span>
+    <h2 class="sec-title reveal">Where the experience was built</h2>
+    <p class="sec-sub reveal">Seven roles, four industries — English tutoring, quality assurance, configuration management, technical support, data analysis and sales.</p>
 
-      <div class="hero" style="margin:0 -1.5rem;">
-        <div class="container">
-          <div class="hero-grid">
-            <div>
-              <div class="hero-kicker eyebrow" data-i18n="hero.eyebrow">Global Business Advisory · Est. 1964</div>
-              <h1 data-i18n-html="hero.h1">Your strategic <em>global partner</em>, since Zürich, 1964.</h1>
-              <p class="hero-lead" data-i18n="hero.lead">
-                InterConsulta Egypt delivers highly specialized corporate solutions to scale, protect and legally align your enterprise vision — from capital structuring to cross-border litigation.
-              </p>
-              <div class="hero-credentials">
-                <span><i class="bi bi-bank"></i><span data-i18n="hero.cred1">Zürich, 1964</span></span>
-                <span><i class="bi bi-geo-alt"></i><span data-i18n="hero.cred2">Cairo, 1983</span></span>
-                <span><i class="bi bi-diagram-3"></i><span data-i18n="hero.cred3">11 practice areas</span></span>
-              </div>
-              <div class="btn-row">
-                <button onclick="switchPortalView('services')" class="btn btn-brass"><span data-i18n="hero.btn1">Explore Solutions</span> <i class="bi bi-arrow-right"></i></button>
-                <button onclick="switchPortalView('contact')" class="btn btn-outline-light" data-i18n="hero.btn2">Request Callback</button>
-              </div>
-            </div>
-
-            <div class="dossier">
-              <div class="dossier-frame" id="heroFrame">
-                <div class="dossier-slide active" data-img="fin.jpg">
-                  <img src="fin.jpg" alt="Wealth advisory solutions" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                  <div class="dossier-fallback"><i class="bi bi-graph-up-arrow"></i><span>Financial &amp; Capital Advisory</span></div>
-                  <div class="dossier-caption">Financial &amp; Capital Advisory</div>
-                </div>
-                <div class="dossier-slide" data-img="mus.jpg">
-                  <img src="mus.jpg" alt="Historical event operations" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                  <div class="dossier-fallback"><i class="bi bi-bank2"></i><span>Historical Event Architecture</span></div>
-                  <div class="dossier-caption">Historical Event Architecture</div>
-                </div>
-                <div class="dossier-slide" data-img="create.jpg">
-                  <img src="create.jpg" alt="Corporate incorporations" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                  <div class="dossier-fallback"><i class="bi bi-building-add"></i><span>Corporate Incorporations</span></div>
-                  <div class="dossier-caption">Corporate Incorporations</div>
-                </div>
-                <div class="dossier-slide" data-img="sec.jpg">
-                  <img src="sec.jpg" alt="Cybersecurity auditing" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                  <div class="dossier-fallback"><i class="bi bi-shield-lock"></i><span>Cybersecurity Auditing</span></div>
-                  <div class="dossier-caption">Cybersecurity Auditing</div>
-                </div>
-              </div>
-              <div class="dossier-dots" id="heroDots"></div>
-            </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot current"></div>
+        <div class="tl-card current">
+          <div class="tl-top">
+            <div><div class="tl-role">English Tutor for Professionals</div><div class="tl-company">Self-Employed</div></div>
+            <span class="tl-tag current">CURRENT</span>
           </div>
-
-          <div class="pop-row" id="popRow">
-            <span class="pop-badge" data-i18n="pop.easy">Easy</span>
-            <span class="pop-badge" data-i18n="pop.simple">Simple</span>
-            <span class="pop-badge" data-i18n="pop.cheap">Cheap</span>
-            <span class="pop-badge" data-i18n="pop.fast">Fast</span>
-          </div>
+          <ul>
+            <li>Teaches English to working professionals, tailoring lessons to business communication and career needs.</li>
+            <li>Applies a training and coaching approach carried over from technical documentation and process work.</li>
+          </ul>
         </div>
       </div>
 
-      <div class="stats-strip" style="margin:0 -1.5rem;">
-        <div class="container">
-          <div class="stats-grid">
-            <div class="stat reveal">
-              <div class="stat-num" data-count-to="60" data-suffix="+">0</div>
-              <div class="stat-label" data-i18n="stats.label1">Years of continuous operation</div>
-            </div>
-            <div class="stat reveal">
-              <div class="stat-num" data-count-to="1983">0</div>
-              <div class="stat-label" data-i18n="stats.label2">Established in Cairo</div>
-            </div>
-            <div class="stat reveal">
-              <div class="stat-num" data-count-to="11">0</div>
-              <div class="stat-label" data-i18n="stats.label3">Active practice areas</div>
-            </div>
-            <div class="stat reveal">
-              <div class="stat-num" data-count-to="6">0</div>
-              <div class="stat-label" data-i18n="stats.label4">Coverage countries — Egypt, Florida, Morocco, Jordan, Saudi Arabia &amp; UAE</div>
-            </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div><div class="tl-role">Software Automotive Quality</div><div class="tl-company">Continental Automotive</div></div>
+            <span class="tl-tag">AUTOMOTIVE</span>
           </div>
+          <ul>
+            <li>Supported software quality assurance processes within automotive engineering programs.</li>
+            <li>Worked with process and compliance standards common to automotive software delivery.</li>
+          </ul>
         </div>
       </div>
 
-      <div class="section-tight">
-        <div class="pull-quote pull-quote-full reveal" data-i18n="mission.quote">
-          We place our corporate clients first — whether structuring complex venture capital funding, executing cross-border portfolio transformations, or orchestrating high-profile diplomatic summits at the Giza Pyramids, our global advisory converts ambition into compliant reality.
-        </div>
-
-        <div class="chip-row reveal" id="chipRow">
-          <!-- populated by JS from SECTOR list -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ABOUT ============ -->
-    <section id="view-about" class="app-view">
-      <div class="section-head reveal">
-        <div class="eyebrow" data-i18n="about.eyebrow">The Firm</div>
-        <h2 class="section-title" data-i18n="about.title">Corporate Intelligence</h2>
-      </div>
-
-      <div class="about-grid reveal">
-        <div class="card">
-          <h3 data-i18n="about.card.title">About Us</h3>
-          <p data-i18n="about.card.p1">
-            Established originally in Switzerland in 1964, InterConsulta Egypt remains a premier institutional standard-bearer for operational execution and corporate growth strategy. Establishing operations in Egypt in 1983, the enterprise became directly involved in core national industrial infrastructure pathways.
-          </p>
-          <p data-i18n="about.card.p2">
-            Following a corporate relaunch in 2017, the firm channels high-level portfolio wealth management, asset verification metrics, and specialized structural consulting for multinational entities.
-          </p>
-        </div>
-        <div class="about-callout">
-          <h4><i class="bi bi-shield-check me-2"></i><span data-i18n="about.callout.title">Institutional Standards</span></h4>
-          <p data-i18n="about.callout.p">
-            Utilizing precise regional index assessments, risk analysis architecture, and an elite team of senior legal and financial specialists, we supply custom target frameworks to address the modern dynamics of the Egyptian macroeconomy.
-          </p>
-        </div>
-      </div>
-
-      <div class="section-tight">
-        <div class="section-head reveal" style="margin-bottom:1.8rem;">
-          <div class="eyebrow" data-i18n="history.eyebrow">The Record</div>
-          <h2 class="section-title" style="font-size:1.8rem;" data-i18n="history.title">Our History</h2>
-          <p class="section-sub" data-i18n="history.sub">Decades of unbroken cross-border trust and generational client retainment.</p>
-        </div>
-
-        <div class="timeline reveal">
-          <div class="timeline-item">
-            <span class="timeline-date" data-i18n="tl1.date">1964 — Zürich</span>
-            <h5 data-i18n="tl1.title">Founding of the firm</h5>
-            <p data-i18n="tl1.desc">InterConsulta is established in Switzerland, laying the institutional foundation that still governs our advisory discipline today.</p>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div><div class="tl-role">Configuration Management</div><div class="tl-company">Vitesco Technologies</div></div>
+            <span class="tl-tag">AUTOMOTIVE</span>
           </div>
-          <div class="timeline-item">
-            <span class="timeline-date" data-i18n="tl2.date">1983 — Cairo</span>
-            <h5 data-i18n="tl2.title">Egyptian operations begin</h5>
-            <p data-i18n="tl2.desc">The firm establishes a permanent presence in Egypt, becoming directly involved in core national industrial infrastructure pathways.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date" data-i18n="tl3.date">1984 – 1999 — Nationwide expansion</span>
-            <h5 data-i18n="tl3.title">Branch network growth</h5>
-            <p data-i18n="tl3.desc">Strong operational branches are established across Egypt, deepening ties with government ministries and corporate investment zones.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date" data-i18n="tl4.date">2017 — Relaunch</span>
-            <h5 data-i18n="tl4.title">Optimized baseline framework</h5>
-            <p data-i18n="tl4.desc">A corporate relaunch sharpens our focus on portfolio wealth management, asset verification, and structural consulting for multinational entities.</p>
-          </div>
-        </div>
-
-        <div class="card reveal" style="margin-top:2rem;">
-          <p style="color:var(--muted); line-height:1.75; margin:0;" data-i18n="about.closing">
-            In a business ecosystem shaped by rapid technological shifts and unpredictable regulatory transitions, InterConsulta stands as a steady, reliable anchor. The definitive verification of our success lies in our client longevity — many of our premier institutional partners have retained our consultation tracks through multi-generational successions.
-          </p>
+          <ul>
+            <li>Managed configuration management processes and ASPICE audit preparation.</li>
+            <li>Produced technical documentation aligned to internal company processes.</li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <!-- ============ SERVICES ============ -->
-    <section id="view-services" class="app-view">
-      <div class="section-head reveal">
-        <div class="eyebrow" data-i18n="services.eyebrow">The Index</div>
-        <h2 class="section-title" data-i18n="services.title">Operational Sectors</h2>
-        <p class="section-sub" data-i18n="services.sub">Eleven practice areas, indexed below. Select any entry, or let the record advance on its own.</p>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div><div class="tl-role">Web Application Support</div><div class="tl-company">IT Vizion</div></div>
+            <span class="tl-tag">IT SERVICES</span>
+          </div>
+          <ul>
+            <li>Provided technical support for web applications, troubleshooting and resolving user issues.</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="services-shell reveal" id="servicesShell">
-        <nav class="services-index" id="servicesIndex" aria-label="Sector index"></nav>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div><div class="tl-role">Web Application Support — HR Platforms</div><div class="tl-company">UnifiedPost</div></div>
+            <span class="tl-tag">FINANCE / HR TECH</span>
+          </div>
+          <ul>
+            <li>Supported web applications used by HR-focused clients, ensuring reliable day-to-day operation.</li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div><div class="tl-role">Data Analysis</div><div class="tl-company">Sustainalytics</div></div>
+            <span class="tl-tag">FINANCE</span>
+          </div>
+          <ul>
+            <li>Collected, filtered, and manipulated data sets to support financial and ESG-related analysis.</li>
+            <li>Built and maintained Excel-based reporting using formulas, pivot tables, and charts.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div><div class="tl-role">Sales</div><div class="tl-company">Caremil SRL</div></div>
+            <span class="tl-tag">SALES</span>
+          </div>
+          <ul>
+            <li>Managed client relationships and sales activity, applying customer service and negotiation skills.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="skills">
+  <div class="container">
+    <span class="kicker reveal">Capabilities</span>
+    <h2 class="sec-title reveal">Skills, grouped by discipline</h2>
+    <p class="sec-sub reveal">A practical toolkit built across engineering, data, and client-facing roles.</p>
+
+    <div class="skill-groups">
+      <div class="skill-card reveal">
+        <h4>Quality &amp; Process</h4>
+        <div class="chip-row">
+          <span class="chip">ASPICE Audit Prep</span>
+          <span class="chip">Configuration Management</span>
+          <span class="chip">Feasibility Studies</span>
+          <span class="chip">Technical Documentation</span>
+          <span class="chip">Agile (Jira)</span>
+          <span class="chip">Training</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4>Data &amp; Development</h4>
+        <div class="chip-row">
+          <span class="chip">Python</span>
+          <span class="chip">REST APIs (Postman)</span>
+          <span class="chip">HTML &amp; CSS</span>
+          <span class="chip">GitHub / Git Bash</span>
+          <span class="chip">SAP EP</span>
+          <span class="chip">Excel (Advanced)</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4>Business &amp; Client Relations</h4>
+        <div class="chip-row">
+          <span class="chip">Sales</span>
+          <span class="chip">Customer Service</span>
+          <span class="chip">Analytical Thinking</span>
+          <span class="chip">Creative Thinking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="achievements">
+  <div class="container">
+    <span class="kicker reveal">Proof of Work</span>
+    <h2 class="sec-title reveal">Achievements &amp; examples</h2>
+    <p class="sec-sub reveal">A few concrete outputs behind the skills above.</p>
+
+    <div class="ach-grid">
+      <div class="ach-card reveal">
+        <span class="ach-num">01</span>
+        <h4>Master's in Applied Econometrics</h4>
+        <p>Advanced quantitative training underpinning data-driven decision-making across finance and analytics work.</p>
+      </div>
+      <div class="ach-card reveal">
+        <span class="ach-num">02</span>
+        <h4>Python automation</h4>
+        <p>Built scripts that connect to Jira to filter, manipulate, and email data automatically — reducing manual reporting effort.</p>
+      </div>
+      <div class="ach-card reveal">
+        <span class="ach-num">03</span>
+        <h4>Git Bash &amp; version control</h4>
+        <p>Cloned repositories and used Git Bash commands as part of building and maintaining web projects.</p>
+      </div>
+      <div class="ach-card reveal">
+        <span class="ach-num">04</span>
+        <h4>HTML &amp; CSS website build</h4>
+        <p>Designed, built, and hosted a live company website from scratch.</p>
+        <a class="ach-link" href="https://www.interconsultaegypt.com/" target="_blank" rel="noopener">View live site →</a>
+      </div>
+      <div class="ach-card reveal">
+        <span class="ach-num">05</span>
+        <h4>Feasibility studies</h4>
+        <p>Delivered feasibility analysis used to support business and process decisions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="education">
+  <div class="container">
+    <span class="kicker reveal">Academic Background</span>
+    <h2 class="sec-title reveal">Education</h2>
+
+    <div class="edu-list">
+      <div class="edu-item reveal">
+        <div class="edu-badge">BA</div>
         <div>
-          <div class="services-detail" id="servicesDetail"></div>
-          <div class="services-controls">
-            <button class="svc-nav-btn" id="svcPrev" aria-label="Previous sector"><i class="bi bi-arrow-left"></i></button>
-            <span class="svc-progress" id="svcProgress">I / XI</span>
-            <button class="svc-nav-btn" id="svcNext" aria-label="Next sector"><i class="bi bi-arrow-right"></i></button>
-          </div>
+          <div class="edu-degree">Bachelor in Informatics</div>
+          <div class="edu-school">Timișoara Polytechnic — Timișoara, Romania</div>
+          <div class="edu-note">Foundations of programming, the ASCII table, HTML, CSS, and core computing concepts.</div>
         </div>
       </div>
-    </section>
-
-    <!-- ============ CAREERS ============ -->
-    <section id="view-careers" class="app-view">
-      <div class="section-head reveal">
-        <div class="eyebrow" data-i18n="careers.eyebrow">Human Capital</div>
-        <h2 class="section-title" data-i18n="careers.title">Join the Firm</h2>
-      </div>
-
-      <div class="careers-grid">
-        <div class="careers-copy reveal">
-          <div class="pull-quote" data-i18n="careers.quote">Shape the future of global enterprise operations from Cairo.</div>
-          <p data-i18n="careers.p">
-            At InterConsulta Egypt, we bring together senior legal counsels, technical auditors, and strategic financial analysts to form elite advisory squads. We offer cross-border dynamic environments, clear pathways to partnership, and competitive institutional compensation setups.
-          </p>
-        </div>
-
-        <div class="form-card reveal">
-          <h4 data-i18n="careers.form.title">Submit Your Credentials</h4>
-          <p class="sub" data-i18n="careers.form.sub">Join our elite consultancy tier. Upload your professional background profiling sheet below.</p>
-
-          <div id="formFeedback" class="alert-box" role="alert"></div>
-
-          <form id="applicationForm">
-            <div class="field-row">
-              <div class="field">
-                <label for="applicantName" data-i18n="careers.field.name">Full Name</label>
-                <input type="text" id="applicantName" placeholder="John Doe" required>
-              </div>
-              <div class="field">
-                <label for="applicantEmail" data-i18n="careers.field.email">Email Address</label>
-                <input type="email" id="applicantEmail" placeholder="johndoe@enterprise.com" required>
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="applicantTrack" data-i18n="careers.field.track">Target Practice Area</label>
-              <select id="applicantTrack">
-                <option value="Senior Account Officer Remote" data-i18n="careers.track1" selected>Senior Account Officer Remote</option>
-                <option value="Business Development Remote" data-i18n="careers.track2">Business Development Remote</option>
-                <option value="Relationship Manager Remote" data-i18n="careers.track3">Relationship Manager Remote</option>
-                <option value="Team Leader for Account Officers Remote" data-i18n="careers.track4">Team Leader for Account Officers Remote</option>
-                <option value="Senior Relationship Manager Remote" data-i18n="careers.track5">Senior Relationship Manager Remote</option>
-                <option value="Cyber Security Officer Remote" data-i18n="careers.track6">Cyber Security Officer Remote</option>
-                <option value="Credit Specialist / CFA Remote" data-i18n="careers.track7">Credit Specialist / CFA Remote</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label for="applicantMessage" data-i18n="careers.field.message">Your Message</label>
-              <textarea id="applicantMessage" rows="4" data-i18n-placeholder="careers.message.placeholder" placeholder="Tell us about yourself, and please include a link to your CV (Google Drive, LinkedIn, etc.)" required></textarea>
-              <p class="field-hint" data-i18n="careers.field.cvNote">Please include your CV — paste a link to it (Google Drive, Dropbox, LinkedIn) above.</p>
-            </div>
-
-            <div class="field" style="margin-top:1.6rem;">
-              <button type="submit" id="submitBtn" class="submit-btn">
-                <span id="btnText" data-i18n="careers.submit">Process Application</span>
-                <i class="bi bi-arrow-repeat" id="btnSpinner" style="display:none; animation:spin 1s linear infinite;"></i>
-              </button>
-              <p class="mailto-note" data-i18n="careers.mailto.note">This opens your email app, pre-addressed to our Operations &amp; HR Directorates.</p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
-    <section id="view-contact" class="app-view">
-      <div class="section-head reveal">
-        <div class="eyebrow" data-i18n="contact.eyebrow">Reach Us</div>
-        <h2 class="section-title" data-i18n="contact.title">Global Channels</h2>
-      </div>
-
-      <div class="contact-grid reveal">
-        <div class="contact-card">
-          <i class="bi bi-gear-wide-connected"></i>
-          <h5 data-i18n="contact.card1.title">Operations Directorate</h5>
-          <div class="role">Mr. Sameh S. Mosaad</div>
-          <div class="contact-line">
-            <a href="mailto:sameh.mosaad@interconsultaegypt.com">sameh.mosaad<wbr>@interconsultaegypt<wbr>.com</a>
-            <span class="sep">·</span>
-            <a href="tel:+201068568666" class="tel">+20 106 856 8666</a>
-          </div>
-        </div>
-        <div class="contact-card">
-          <i class="bi bi-people"></i>
-          <h5 data-i18n="contact.card2.title">Human Resources</h5>
-          <div class="role" data-i18n="contact.card2.role">Careers and onboarding</div>
-          <a href="mailto:hr@interconsultaegypt.com">hr@interconsultaegypt<wbr>.com</a>
-        </div>
-        <div class="contact-card">
-          <i class="bi bi-cash-coin"></i>
-          <h5 data-i18n="contact.card3.title">Sales &amp; Retainers</h5>
-          <div class="role" data-i18n="contact.card3.role">Client setups and retainers</div>
-          <a href="mailto:sales@interconsultaegypt.com">sales@interconsultaegypt<wbr>.com</a>
-        </div>
-        <div class="contact-card">
-          <i class="bi bi-info-circle"></i>
-          <h5 data-i18n="contact.card4.title">General Inquiries</h5>
-          <div class="role" data-i18n="contact.card4.role">Administrative support</div>
-          <a href="mailto:info@interconsultaegypt.com">info@interconsultaegypt<wbr>.com</a>
-        </div>
-      </div>
-
-      <div class="card hq-grid reveal">
+      <div class="edu-item reveal">
+        <div class="edu-badge">MA</div>
         <div>
-          <h4 data-i18n="contact.hq.title">Our Headquarters</h4>
-          <p data-i18n="contact.hq.p">
-            InterConsulta Egypt's central administrative and legal advisory suites are located strategically within Cairo's primary industrial and legislative hub, allowing real-time synchronization with government ministries and corporate investment zones.
-          </p>
-          <div class="hq-addr">
-            <i class="bi bi-geo-alt-fill"></i>
-            <span data-i18n="contact.hq.addr">129 Othman Ibn Affan St., In Front Of The Old Military Academy, El Nozha, Cairo, Egypt.</span>
-          </div>
+          <div class="edu-degree">Master in Applied Econometrics</div>
+          <div class="edu-school">Kingston University — London, United Kingdom</div>
         </div>
-        <div class="map-frame">
-          <div class="map-label" data-i18n="contact.map.label">Our Google Location</div>
-          <a href="https://maps.app.goo.gl/9cbFcvSKqGU44szx5?g_st=aw" target="_blank" rel="noopener">
-            <div class="map-img-wrap">
-              <img src="InterMap.JPG" alt="Our location" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="map-fallback"><i class="bi bi-map"></i><span data-i18n="contact.map.cta">View on Google Maps →</span></div>
-            </div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-badge">DP</div>
+        <div>
+          <div class="edu-degree">Diploma in Economic Analysis</div>
+          <div class="edu-school">University of Kent — Canterbury, United Kingdom</div>
+        </div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-badge">BA</div>
+        <div>
+          <div class="edu-degree">Bachelor in Economics</div>
+          <div class="edu-school">Tibiscus University — Timișoara, Romania</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="contact">
+  <div class="container">
+    <div class="contact-wrap reveal">
+      <span class="contact-eyebrow">Get In Touch</span>
+      <div class="contact-inner">
+        <div>
+          <h3>Let's talk</h3>
+          <p class="msg">Please share the details of your request below and I'll get back to you as soon as possible.</p>
+        </div>
+        <div class="contact-methods">
+          <a class="cmethod" href="mailto:jobcarmen@yahoo.com">
+            <span class="ic">✉</span>
+            <div><div class="t">Email</div><div class="v">jobcarmen@yahoo.com</div></div>
+          </a>
+          <a class="cmethod" href="tel:+201505608424">
+            <span class="ic">☎</span>
+            <div><div class="t">Call</div><div class="v">+20 150 560 8424</div></div>
+          </a>
+          <a class="cmethod" href="https://wa.me/40760082803" target="_blank" rel="noopener">
+            <span class="ic">💬</span>
+            <div><div class="t">WhatsApp</div><div class="v">+40 760 082 803</div></div>
+          </a>
+          <a class="cmethod" href="https://www.linkedin.com/in/carmen-crai-49197531a/" target="_blank" rel="noopener">
+            <span class="ic">in</span>
+            <div><div class="t">LinkedIn</div><div class="v">Carmen Crai</div></div>
           </a>
         </div>
       </div>
-    </section>
-
-  </div>
-</main>
-
-<footer>
-  <div class="container footer-row">
-    <a href="https://www.linkedin.com/company/interconsulta-egypt/mycompany/" target="_blank" rel="noopener" class="footer-link">
-      <i class="bi bi-linkedin me-2"></i><span data-i18n="footer.linkedin">Connect with us on LinkedIn</span>
-    </a>
-    <div class="footer-links">
-      <button class="footer-link" style="background:none;border:0;" onclick="switchPortalView('home')" data-i18n="footer.top">Top</button>
-      <button class="footer-link" style="background:none;border:0;" onclick="switchPortalView('services')" data-i18n="footer.sectors">Sectors</button>
-      <button class="footer-link" style="background:none;border:0;" onclick="switchPortalView('careers')" data-i18n="footer.careers">Careers Portal</button>
     </div>
-    <div class="footer-brand">InterConsulta Egypt · Est. 1964</div>
   </div>
-</footer>
+</section>
 
-<button class="to-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
-
-<style>@keyframes spin{ to{ transform:rotate(360deg); } }</style>
+<footer>© 2026 Carmen Crai — Curriculum Vitae · <span>Professional</span> · <span>Quality</span> · <span>Simple</span></footer>
 
 <script>
-/* ============================================================
-   DATA — SECTORS
-   ============================================================ */
-const ROMANS = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI'];
-const SECTORS = [
-  { title:'Financial Consultations & Capital Solutions', img:'fin.jpg', icon:'bi-graph-up-arrow',
-    desc:'High-tier advice on corporate financial budgets, liquidity configurations, and capital lines — including asset viability analyses, feasibility evaluations, specialized capital trials, employee pension fund protection architectures, statutory commercial liquidations, and ring-fenced account management.',
-    ar_title:'الاستشارات المالية وحلول رأس المال',
-    ar_desc:'استشارات رفيعة المستوى بشأن الموازنات المالية للشركات، وتنظيم السيولة، وخطوط رأس المال — بما يشمل تحليل جدوى الأصول، ودراسات الجدوى، والتجارب الرأسمالية المتخصصة، وحماية صناديق معاشات الموظفين، والتصفيات التجارية القانونية، وإدارة الحسابات المسيّجة.' },
-  { title:'Project Management & Capital Wealth Formation', img:'trendnew.jpg', icon:'bi-bar-chart-line',
-    desc:'Close monitoring of shifting global macroeconomic matrices and investment trends to provide clarity for corporate asset allocation, converting abstract market insight into practical, scalable corporate wealth growth solutions.',
-    ar_title:'إدارة المشاريع وتكوين الثروات الرأسمالية',
-    ar_desc:'متابعة دقيقة للمتغيرات الاقتصادية الكلية العالمية واتجاهات الاستثمار لتوضيح رؤية توزيع أصول الشركات، وتحويل الرؤى السوقية المجردة إلى حلول عملية وقابلة للتوسع لنمو ثروة الشركات.' },
-  { title:'Cybersecurity Analysis & Vulnerability Auditing', img:'sec.jpg', icon:'bi-shield-lock',
-    desc:'Modern, robust security mapping for enterprise databases, operational controls, and web applications. Assessments systematically detect weaknesses, protecting intellectual property and user transactions against evolving threat landscapes.',
-    ar_title:'تحليل الأمن السيبراني وتدقيق الثغرات',
-    ar_desc:'رسم خرائط أمنية حديثة وقوية لقواعد بيانات الشركات، والضوابط التشغيلية، وتطبيقات الويب. تكتشف تقييماتنا الثغرات بشكل منهجي، لحماية الملكية الفكرية ومعاملات المستخدمين من التهديدات المتطورة.' },
-  { title:'Legal Consultation, International Arbitration & Litigation', img:'international_arbitration.jpg', icon:'bi-hammer',
-    desc:'Guidance and management of complex cross-border corporate contentions, litigation pipelines, and international arbitrations across global seats — protecting investment parameters and securing pre- and post-transaction assets.',
-    ar_title:'الاستشارات القانونية والتحكيم الدولي والتقاضي',
-    ar_desc:'توجيه وإدارة النزاعات التجارية العابرة للحدود، ومسارات التقاضي، والتحكيم الدولي في مقار عالمية متعددة — لحماية معايير الاستثمار وتقليل المسؤولية المؤسسية وتأمين الأصول قبل وبعد الصفقات.' },
-  { title:'Entity Incorporation, Trademarking & HR Outsourcing', img:'create.jpg', icon:'bi-building-add',
-    desc:'Streamlined corporate incorporations and business transformations, including international trademark registrations, Silver/Gold/Diamond government investment incentives, free-zone tax benefits, and tailored recruitment and training tracks.',
-    ar_title:'تأسيس الشركات والعلامات التجارية والاستعانة بمصادر خارجية للموارد البشرية',
-    ar_desc:'تبسيط تأسيس الشركات الجديدة ودعم التحولات التجارية، ويشمل ذلك تسجيل العلامات التجارية الدولية، والحصول على حوافز الاستثمار الحكومية (فضية وذهبية وماسية)، والاستفادة من مزايا المناطق الحرة الضريبية، بدعم من مسارات توظيف وتدريب مخصصة.' },
-  { title:'Infrastructure Development & Developer Permits', img:'construction.jpg', icon:'bi-cone-striped',
-    desc:'Developer licensing tracks and regulatory permissions for large-scale urban development programs — including industrial setup planning, prime contractor vetting, and international institutional project financing configurations.',
-    ar_title:'تطوير البنية التحتية وتصاريح المطورين',
-    ar_desc:'إدارة مسارات ترخيص المطورين والتصاريح التنظيمية لبرامج التطوير العمراني واسعة النطاق — بما يشمل تخطيط الإنشاءات الصناعية، وفحص المقاولين الرئيسيين، وتنظيم التمويل المؤسسي الدولي للمشاريع.' },
-  { title:'Holistic Government & Private Executive Insurance', img:'insurance.jpg', icon:'bi-umbrella',
-    desc:'Tailored corporate asset protection packages across official state frameworks, bespoke private corporate indemnity networks, large-scale property risk management bonds, and comprehensive health care systems for executive teams.',
-    ar_title:'التأمين التنفيذي الشامل الحكومي والخاص',
-    ar_desc:'إعداد وتنظيم باقات حماية أصول مخصصة عبر الأطر الحكومية الرسمية، وشبكات التعويض المؤسسي الخاصة، وسندات إدارة مخاطر الممتلكات واسعة النطاق، وأنظمة رعاية صحية شاملة لفرق الإدارة التنفيذية.' },
-  { title:'Strategic Corporate Accounting & Fiscal Auditing', img:'audit.jpg', icon:'bi-clipboard-data',
-    desc:'Clear compliance support for localized and cross-border tax guidelines, managing evolving tax updates so executive leadership can focus on core business operations during rigorous financial audits.',
-    ar_title:'المحاسبة الاستراتيجية للشركات والتدقيق المالي',
-    ar_desc:'دعم واضح للامتثال للوائح الضريبية المحلية والعابرة للحدود، وإدارة التحديثات الضريبية المتغيرة لتمكين الإدارة التنفيذية من التركيز على العمليات الأساسية أثناء عمليات التدقيق المالي الدقيقة.' },
-  { title:'Hospitality Vetting & Nile Vessel Licensing', img:'nile.jpg', icon:'bi-water',
-    desc:'Coordination of official Ministry of Tourism and Antiquities compliance for premium culinary venues, tourist resorts, and floating Nile cruise ships — accelerating paperwork across high-tier licensing categories.',
-    ar_title:'فحص المنشآت السياحية وترخيص السفن النيلية',
-    ar_desc:'تنسيق خطوات الامتثال الرسمية لوزارة السياحة والآثار للمنشآت الفاخرة للطهي، والمنتجعات السياحية، وسفن الرحلات النيلية العائمة — مع تسريع إجراءات التراخيص عالية المستوى.' },
-  { title:'High-Profile Historical Event Architecture', img:'mus.jpg', icon:'bi-bank2',
-    desc:'Execution of international corporate events at landmarks such as the Grand Egyptian Museum, Giza Pyramids, and Le Lac du Caire — covering site rentals, catering, climate control, diplomat security, and crowd-flow architecture.',
-    ar_title:'تنظيم الفعاليات التاريخية رفيعة المستوى',
-    ar_desc:'تنظيم وتنفيذ فعاليات مؤسسية دولية في معالم تاريخية مثل المتحف المصري الكبير وأهرامات الجيزة وبحيرة القاهرة — وتشمل الخدمات تأجير المواقع، والضيافة الفاخرة، والتحكم في المناخ، وبروتوكولات أمن الدبلوماسيين، وتنظيم تدفق الحشود.' },
-  { title:'Outsource Services', img:'out.jpg.JPG', icon:'bi-headset',
-    desc:'Call-center-related technical services, recruitment, and staff training for banking, multinational companies, petroleum companies, and hotels/restaurants.',
-    ar_title:'خدمات الاستعانة بمصادر خارجية',
-    ar_desc:'خدمات فنية متعلقة بمراكز الاتصال، والتوظيف، وتدريب الموظفين لقطاعات البنوك والشركات متعددة الجنسيات وشركات البترول والفنادق والمطاعم.' },
-];
+  // mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
-/* ============================================================
-   VIEW SWITCHING
-   ============================================================ */
-function switchPortalView(viewId){
-  document.querySelectorAll('.app-view').forEach(v => v.classList.remove('active-view'));
-  document.querySelectorAll('.nav-link-btn').forEach(b => b.classList.remove('active'));
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.12});
+  revealEls.forEach(el => io.observe(el));
 
-  const target = document.getElementById('view-' + viewId);
-  if(target){
-    target.classList.add('active-view');
-    window.scrollTo({ top:0, behavior:'smooth' });
-    // stagger-reveal content within this view
-    const items = target.querySelectorAll('.reveal');
-    items.forEach((el,i) => {
-      el.classList.remove('in-view');
-      setTimeout(() => el.classList.add('in-view'), 60 + i*90);
-    });
-  }
-  const btn = document.getElementById('btn-' + viewId);
-  if(btn) btn.classList.add('active');
-
-  document.getElementById('navLinks').classList.remove('open');
-}
-
-/* ============================================================
-   NAV MOBILE TOGGLE + SCROLL SHADOW
-   ============================================================ */
-document.getElementById('navToggle').addEventListener('click', () => {
-  document.getElementById('navLinks').classList.toggle('open');
-});
-window.addEventListener('scroll', () => {
-  document.getElementById('siteHeader').classList.toggle('is-scrolled', window.scrollY > 8);
-  document.getElementById('toTop').classList.toggle('show', window.scrollY > 500);
-}, { passive:true });
-document.getElementById('toTop').addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
-
-/* ============================================================
-   HERO DOSSIER CAROUSEL
-   ============================================================ */
-(function heroCarousel(){
-  const slides = document.querySelectorAll('#heroFrame .dossier-slide');
-  const dotsWrap = document.getElementById('heroDots');
-  let idx = 0, timer;
-
-  slides.forEach((s,i) => {
-    const dot = document.createElement('button');
-    if(i===0) dot.classList.add('active');
-    dot.addEventListener('click', () => go(i));
-    dotsWrap.appendChild(dot);
-  });
-
-  function go(i){
-    slides[idx].classList.remove('active');
-    dotsWrap.children[idx].classList.remove('active');
-    idx = i;
-    slides[idx].classList.add('active');
-    dotsWrap.children[idx].classList.add('active');
-  }
-  function next(){ go((idx+1) % slides.length); }
-  function start(){ timer = setInterval(next, 4200); }
-  function stop(){ clearInterval(timer); }
-
-  start();
-  const frame = document.getElementById('heroFrame');
-  frame.addEventListener('mouseenter', stop);
-  frame.addEventListener('mouseleave', start);
-})();
-
-/* ============================================================
-   SERVICES INDEX + DETAIL
-   ============================================================ */
-const servicesModule = (function(){
-  const indexNav = document.getElementById('servicesIndex');
-  const detail = document.getElementById('servicesDetail');
-  const progress = document.getElementById('svcProgress');
-  let current = 0, timer;
-
-  function t(s){ return window.__lang === 'ar' ? { title:s.ar_title, desc:s.ar_desc } : { title:s.title, desc:s.desc }; }
-  function sectorWord(){ return window.__lang === 'ar' ? 'القطاع' : 'SECTOR'; }
-
-  function buildIndex(){
-    indexNav.innerHTML = '';
-    SECTORS.forEach((s,i) => {
-      const b = document.createElement('button');
-      const tr = t(s);
-      b.className = 'svc-index-btn' + (i===current ? ' active' : '');
-      b.innerHTML = `<span class="svc-roman">${ROMANS[i]}</span><span class="svc-index-title">${tr.title}</span>`;
-      b.addEventListener('click', () => select(i, true));
-      indexNav.appendChild(b);
-    });
-  }
-
-  function render(i){
-    const s = SECTORS[i];
-    const tr = t(s);
-    detail.innerHTML = `
-      <div class="svc-panel active">
-        <div>
-          <span class="svc-num-badge">${sectorWord()} ${ROMANS[i]} / XI</span>
-          <h3>${tr.title}</h3>
-          <p>${tr.desc}</p>
-        </div>
-        <div class="svc-img">
-          <img src="${s.img}" alt="${tr.title}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="svc-fallback"><i class="bi ${s.icon}"></i><span>${tr.title}</span></div>
-        </div>
-      </div>`;
-    progress.textContent = `${ROMANS[i]} / XI`;
-  }
-
-  function select(i, manual){
-    current = i;
-    render(current);
-    [...indexNav.children].forEach((b,j) => b.classList.toggle('active', j===i));
-    if(indexNav.children[i]) indexNav.children[i].scrollIntoView({ block:'nearest', behavior:'smooth' });
-    if(manual) restart();
-  }
-
-  function nextSlide(){ select((current+1) % SECTORS.length); }
-  function restart(){ clearInterval(timer); timer = setInterval(nextSlide, 2800); }
-
-  document.getElementById('svcNext').addEventListener('click', () => select((current+1)%SECTORS.length, true));
-  document.getElementById('svcPrev').addEventListener('click', () => select((current-1+SECTORS.length)%SECTORS.length, true));
-
-  const shell = document.getElementById('servicesShell');
-  shell.addEventListener('mouseenter', () => clearInterval(timer));
-  shell.addEventListener('mouseleave', restart);
-
-  buildIndex();
-  render(0);
-  restart();
-
-  window.__goToSector = (i) => select(i, true);
-
-  return { refresh(){ buildIndex(); render(current); } };
-})();
-
-/* Home "at a glance" chips linking into the sector index */
-const chipRowModule = (function(){
-  const wrap = document.getElementById('chipRow');
-  function build(){
-    wrap.innerHTML = '';
-    SECTORS.forEach((s,i) => {
-      const c = document.createElement('button');
-      c.className = 'chip';
-      c.textContent = window.__lang === 'ar' ? s.ar_title : s.title;
-      c.addEventListener('click', () => {
-        switchPortalView('services');
-        setTimeout(() => window.__goToSector && window.__goToSector(i), 150);
-      });
-      wrap.appendChild(c);
-    });
-  }
-  build();
-  return { refresh: build };
-})();
-
-/* ============================================================
-   SCROLL REVEAL (for the long-scrolling Home view)
-   ============================================================ */
-(function revealObserver(){
-  const els = document.querySelectorAll('.reveal');
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in-view'); obs.unobserve(e.target); } });
-  }, { threshold:.15 });
-  els.forEach(el => obs.observe(el));
-})();
-
-/* ============================================================
-   ROLLING STAT COUNTERS
-   ============================================================ */
-(function statCounters(){
-  const stats = document.querySelectorAll('.stat-num');
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if(!e.isIntersecting) return;
-      const el = e.target;
-      const to = parseInt(el.dataset.countTo, 10);
-      const suffix = el.dataset.suffix || '';
-      if(reduce){ el.textContent = to + suffix; obs.unobserve(el); return; }
-      const dur = 1400, start = performance.now();
-      function tick(now){
-        const p = Math.min(1, (now-start)/dur);
-        const eased = 1 - Math.pow(1-p, 3);
-        el.textContent = Math.round(to * eased) + suffix;
-        if(p < 1) requestAnimationFrame(tick); else el.textContent = to + suffix;
+  // animated counters
+  const counters = document.querySelectorAll('.num[data-count]');
+  const counted = new WeakSet();
+  const cio = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting && !counted.has(entry.target)){
+        counted.add(entry.target);
+        const el = entry.target;
+        const target = parseInt(el.dataset.count, 10);
+        const suffix = el.dataset.suffix || '';
+        const dur = 1200;
+        const start = performance.now();
+        function tick(now){
+          const p = Math.min((now - start) / dur, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(eased * target) + suffix;
+          if(p < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
       }
-      requestAnimationFrame(tick);
-      obs.unobserve(el);
     });
-  }, { threshold:.4 });
-  stats.forEach(s => obs.observe(s));
-})();
-
-/* ============================================================
-   CAREERS FORM
-   ============================================================ */
-document.getElementById('applicationForm').addEventListener('submit', function(event){
-  event.preventDefault();
-  const name = document.getElementById('applicantName').value;
-  const email = document.getElementById('applicantEmail').value;
-  const track = document.getElementById('applicantTrack').value;
-  const message = document.getElementById('applicantMessage').value;
-  const feedbackBox = document.getElementById('formFeedback');
-  const submitBtn = document.getElementById('submitBtn');
-  const btnText = document.getElementById('btnText');
-  const btnSpinner = document.getElementById('btnSpinner');
-  const L = window.__lang;
-
-  submitBtn.disabled = true;
-  btnText.textContent = I18N[L]['careers.processing'];
-  btnSpinner.style.display = 'inline-block';
-
-  setTimeout(() => {
-    submitBtn.disabled = false;
-    btnText.textContent = I18N[L]['careers.submit'];
-    btnSpinner.style.display = 'none';
-
-    // Build a pre-filled email to the Operations Directorate and HR Directorate.
-    const recipients = 'sameh.mosaad@interconsultaegypt.com,hr@interconsultaegypt.com';
-    const subject = `Job Application — ${track} — ${name}`;
-    const bodyLines = L === 'ar'
-      ? [
-          `الاسم: ${name}`,
-          `البريد الإلكتروني: ${email}`,
-          `مجال العمل المستهدف: ${track}`,
-          '',
-          'الرسالة:',
-          message
-        ]
-      : [
-          `Full Name: ${name}`,
-          `Email Address: ${email}`,
-          `Target Practice Area: ${track}`,
-          '',
-          'Message:',
-          message
-        ];
-    const body = bodyLines.join('\n');
-    const mailtoLink = `mailto:${recipients}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    feedbackBox.classList.add('show');
-    feedbackBox.innerHTML = L === 'ar'
-      ? `<strong>جارٍ فتح تطبيق البريد الإلكتروني.</strong> شكرًا لك، ${name}. ستُرسل رسالتك إلى <strong>الإدارة التشغيلية</strong> و<strong>الموارد البشرية</strong>.`
-      : `<strong>Opening your email application.</strong> Thank you, ${name}. Your message will go to both the <strong>Operations Directorate</strong> and <strong>HR Directorate</strong>.`;
-
-    window.location.href = mailtoLink;
-
-    document.getElementById('applicationForm').reset();
-  }, 1200);
-});
-
-/* ============================================================
-   POP BADGES — Easy / Simple / Cheap / Fast
-   ============================================================ */
-(function popBadges(){
-  const wrap = document.getElementById('popRow');
-  const badges = wrap.querySelectorAll('.pop-badge');
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if(!e.isIntersecting) return;
-      badges.forEach((b,i) => setTimeout(() => b.classList.add('pop-in'), i*140));
-      obs.unobserve(wrap);
-    });
-  }, { threshold:.4 });
-  obs.observe(wrap);
-})();
-
-/* ============================================================
-   I18N — EN / AR
-   ============================================================ */
-const I18N = {
-  en: {
-    'nav.home':'Home', 'nav.about':'About & History', 'nav.services':'Our Services',
-    'nav.careers':'Careers', 'nav.contact':'Contact & Visit',
-    'hero.eyebrow':'Global Business Advisory · Est. 1964',
-    'hero.h1':'Your strategic <em>global partner</em>, since Zürich, 1964.',
-    'hero.lead':'InterConsulta Egypt delivers highly specialized corporate solutions to scale, protect and legally align your enterprise vision — from capital structuring to cross-border litigation.',
-    'hero.cred1':'Zürich, 1964', 'hero.cred2':'Cairo, 1983', 'hero.cred3':'11 practice areas',
-    'hero.btn1':'Explore Solutions', 'hero.btn2':'Request Callback',
-    'pop.easy':'Easy', 'pop.simple':'Simple', 'pop.cheap':'Cheap', 'pop.fast':'Fast',
-    'stats.label1':'Years of continuous operation', 'stats.label2':'Established in Cairo',
-    'stats.label3':'Active practice areas', 'stats.label4':'Nations of origin — Egypt, Florida, Morocco, Jordan, Saudi Arabia & UAE',
-    'mission.quote':'We place our corporate clients first — whether structuring complex venture capital funding, executing cross-border portfolio transformations, or orchestrating high-profile diplomatic summits at the Giza Pyramids, our global advisory converts ambition into compliant reality.',
-    'about.eyebrow':'The Firm', 'about.title':'Corporate Intelligence',
-    'about.card.title':'About Us',
-    'about.card.p1':'Established originally in Switzerland in 1964, InterConsulta Egypt remains a premier institutional standard-bearer for operational execution and corporate growth strategy. Establishing operations in Egypt in 1983, the enterprise became directly involved in core national industrial infrastructure pathways.',
-    'about.card.p2':'Following a corporate relaunch in 2017, the firm channels high-level portfolio wealth management, asset verification metrics, and specialized structural consulting for multinational entities.',
-    'about.callout.title':'Institutional Standards',
-    'about.callout.p':'Utilizing precise regional index assessments, risk analysis architecture, and an elite team of senior legal and financial specialists, we supply custom target frameworks to address the modern dynamics of the Egyptian macroeconomy.',
-    'history.eyebrow':'The Record', 'history.title':'Our History',
-    'history.sub':'Decades of unbroken cross-border trust and generational client retainment.',
-    'tl1.date':'1964 — Zürich', 'tl1.title':'Founding of the firm',
-    'tl1.desc':'InterConsulta is established in Switzerland, laying the institutional foundation that still governs our advisory discipline today.',
-    'tl2.date':'1983 — Cairo', 'tl2.title':'Egyptian operations begin',
-    'tl2.desc':'The firm establishes a permanent presence in Egypt, becoming directly involved in core national industrial infrastructure pathways.',
-    'tl3.date':'1984 – 1999 — Nationwide expansion', 'tl3.title':'Branch network growth',
-    'tl3.desc':'Strong operational branches are established across Egypt, deepening ties with government ministries and corporate investment zones.',
-    'tl4.date':'2017 — Relaunch', 'tl4.title':'Optimized baseline framework',
-    'tl4.desc':'A corporate relaunch sharpens our focus on portfolio wealth management, asset verification, and structural consulting for multinational entities.',
-    'about.closing':'In a business ecosystem shaped by rapid technological shifts and unpredictable regulatory transitions, InterConsulta stands as a steady, reliable anchor. The definitive verification of our success lies in our client longevity — many of our premier institutional partners have retained our consultation tracks through multi-generational successions.',
-    'services.eyebrow':'The Index', 'services.title':'Operational Sectors',
-    'services.sub':'Eleven practice areas, indexed below. Select any entry, or let the record advance on its own.',
-    'careers.eyebrow':'Human Capital', 'careers.title':'Join the Firm',
-    'careers.quote':'Shape the future of global enterprise operations from Cairo.',
-    'careers.p':'At InterConsulta Egypt, we bring together senior legal counsels, technical auditors, and strategic financial analysts to form elite advisory squads. We offer cross-border dynamic environments, clear pathways to partnership, and competitive institutional compensation setups.',
-    'careers.form.title':'Submit Your Credentials',
-    'careers.form.sub':'Join our elite consultancy tier. Send us your details and we will follow up by email.',
-    'careers.field.name':'Full Name', 'careers.field.email':'Email Address', 'careers.field.track':'Target Practice Area',
-    'careers.field.message':'Your Message',
-    'careers.message.placeholder':'Tell us about yourself, and please include a link to your CV (Google Drive, LinkedIn, etc.)',
-    'careers.field.cvNote':'Please include your CV — paste a link to it (Google Drive, Dropbox, LinkedIn) above.',
-    'careers.track1':'Senior Account Officer remote', 'careers.track2':'Business Development remote',
-    'careers.track3':'Relationship Manager remote', 'careers.track4':'Team Leader for Account Officers remote',
-    'careers.track5':'Senior Relationship Manager remote', 'careers.track6':'Cyber Security Officer remote',
-    'careers.track7':'Credit Specialist / CFA remote',
-    'careers.submit':'Process Application', 'careers.processing':'Processing Application…',
-    'careers.mailto.note':'This opens your email app, pre-addressed to our Operations & HR Directorates.',
-    'contact.eyebrow':'Reach Us', 'contact.title':'Global Channels',
-    'contact.card1.title':'Operations Directorate',
-    'contact.card2.title':'Human Resources', 'contact.card2.role':'Careers and onboarding',
-    'contact.card3.title':'Sales & Retainers', 'contact.card3.role':'Client setups and retainers',
-    'contact.card4.title':'General Inquiries', 'contact.card4.role':'Administrative support',
-    'contact.hq.title':'Our Headquarters',
-    'contact.hq.p':"InterConsulta Egypt's central administrative and legal advisory suites are located strategically within Cairo's primary industrial and legislative hub, allowing real-time synchronization with government ministries and corporate investment zones.",
-    'contact.hq.addr':'129 Othman Ibn Affan St., In Front Of The Old Military Academy, El Nozha, Cairo, Egypt.',
-    'contact.map.label':'Our Google Location', 'contact.map.cta':'View on Google Maps →',
-    'footer.linkedin':'Connect with us on LinkedIn', 'footer.top':'Top',
-    'footer.sectors':'Sectors', 'footer.careers':'Careers Portal',
-  },
-  ar: {
-    'nav.home':'الرئيسية', 'nav.about':'من نحن وتاريخنا', 'nav.services':'خدماتنا',
-    'nav.careers':'الوظائف', 'nav.contact':'تواصل معنا',
-    'hero.eyebrow':'استشارات أعمال عالمية · تأسست 1964',
-    'hero.h1':'شريككم الاستراتيجي <em>العالمي</em>، منذ زيورخ عام 1964.',
-    'hero.lead':'تقدم إنتركونسولتا مصر حلولاً مؤسسية عالية التخصص لتنمية مؤسستكم وحمايتها ومواءمتها قانونياً — من هيكلة رأس المال إلى التقاضي عبر الحدود.',
-    'hero.cred1':'زيورخ، 1964', 'hero.cred2':'القاهرة، 1983', 'hero.cred3':'11 قطاعاً عملياً',
-    'hero.btn1':'استكشف الحلول', 'hero.btn2':'اطلب اتصالاً',
-    'pop.easy':'سهل', 'pop.simple':'بسيط', 'pop.cheap':'اقتصادي', 'pop.fast':'سريع',
-    'stats.label1':'عاماً من العمل المتواصل', 'stats.label2':'تأسست في القاهرة',
-    'stats.label3':'قطاعاً عملياً نشطاً', 'stats.label4':'دول المنشأ — مصر، فلوريدا، المغرب، الأردن، السعودية والإمارات',
-    'mission.quote':'نضع عملاءنا من الشركات في المقام الأول — سواء في هيكلة تمويلات رأس المال الجريء المعقدة، أو تنفيذ التحولات الاستثمارية العابرة للحدود، أو تنظيم القمم الدبلوماسية رفيعة المستوى عند أهرامات الجيزة، تُحوّل استشاراتنا العالمية الطموح إلى واقع متوافق تماماً مع القانون.',
-    'about.eyebrow':'الشركة', 'about.title':'الاستخبارات المؤسسية',
-    'about.card.title':'من نحن',
-    'about.card.p1':'تأسست إنتركونسولتا في الأصل بسويسرا عام 1964، وما زالت رائدة مؤسسية في التنفيذ التشغيلي واستراتيجية النمو للشركات. ومنذ بدء عملياتها في مصر عام 1983، ارتبطت المؤسسة ارتباطاً مباشراً بمسارات البنية التحتية الصناعية الوطنية الأساسية.',
-    'about.card.p2':'وعقب إعادة الإطلاق المؤسسي في عام 2017، تركز الشركة على إدارة الثروات على مستوى المحافظ الاستثمارية، ومقاييس التحقق من الأصول، والاستشارات الهيكلية المتخصصة للكيانات متعددة الجنسيات.',
-    'about.callout.title':'المعايير المؤسسية',
-    'about.callout.p':'باستخدام تقييمات إقليمية دقيقة، وهيكلية تحليل مخاطر متقدمة، وفريق نخبوي من كبار المتخصصين القانونيين والماليين، نوفر أطراً مخصصة لمواجهة ديناميكيات الاقتصاد المصري الحديث.',
-    'history.eyebrow':'السجل', 'history.title':'تاريخنا',
-    'history.sub':'عقود من الثقة المستمرة عبر الحدود والاحتفاظ بالعملاء عبر الأجيال.',
-    'tl1.date':'1964 — زيورخ', 'tl1.title':'تأسيس الشركة',
-    'tl1.desc':'تأسست إنتركونسولتا في سويسرا، لتضع الأساس المؤسسي الذي ما زال يحكم انضباطنا الاستشاري حتى اليوم.',
-    'tl2.date':'1983 — القاهرة', 'tl2.title':'بدء العمليات المصرية',
-    'tl2.desc':'أسست الشركة حضوراً دائماً في مصر، وارتبطت مباشرة بمسارات البنية التحتية الصناعية الوطنية الأساسية.',
-    'tl3.date':'1984 – 1999 — التوسع على مستوى الجمهورية', 'tl3.title':'نمو شبكة الفروع',
-    'tl3.desc':'تم تأسيس فروع تشغيلية قوية في جميع أنحاء مصر، مما عزز الروابط مع الوزارات الحكومية والمناطق الاستثمارية المؤسسية.',
-    'tl4.date':'2017 — إعادة الإطلاق', 'tl4.title':'إطار عمل أساسي محسّن',
-    'tl4.desc':'صقلت إعادة الإطلاق المؤسسي تركيزنا على إدارة الثروات الاستثمارية، والتحقق من الأصول، والاستشارات الهيكلية للكيانات متعددة الجنسيات.',
-    'about.closing':'في منظومة أعمال تتشكل بفعل التحولات التقنية السريعة والتحولات التنظيمية غير المتوقعة، تظل إنتركونسولتا ركيزة ثابتة يُعتمد عليها. والدليل القاطع على نجاحنا يكمن في استمرارية عملائنا — إذ حافظ كثير من شركائنا المؤسسيين رفيعي المستوى على مسارات استشاراتنا عبر أجيال متعاقبة.',
-    'services.eyebrow':'الفهرس', 'services.title':'القطاعات التشغيلية',
-    'services.sub':'أحد عشر قطاعاً عملياً، مفهرسة أدناه. اختر أي عنصر، أو دع السجل يتقدم من تلقاء نفسه.',
-    'careers.eyebrow':'رأس المال البشري', 'careers.title':'انضم إلى الشركة',
-    'careers.quote':'شارك في تشكيل مستقبل عمليات المؤسسات العالمية انطلاقاً من القاهرة.',
-    'careers.p':'في إنتركونسولتا مصر، نجمع بين كبار المستشارين القانونيين والمدققين الفنيين والمحللين الماليين الاستراتيجيين لتشكيل فرق استشارية نخبوية. نقدم بيئات ديناميكية عابرة للحدود، ومسارات واضحة نحو الشراكة، وحزم تعويضات مؤسسية تنافسية.',
-    'careers.form.title':'أرسل بياناتك',
-    'careers.form.sub':'انضم إلى فئة الاستشارات النخبوية لدينا. أرسل بياناتك وسنتواصل معك عبر البريد الإلكتروني.',
-    'careers.field.name':'الاسم الكامل', 'careers.field.email':'البريد الإلكتروني', 'careers.field.track':'مجال العمل المستهدف',
-    'careers.field.message':'رسالتك',
-    'careers.message.placeholder':'أخبرنا عن نفسك، ويرجى إرفاق رابط لسيرتك الذاتية (جوجل درايف، لينكدإن، إلخ).',
-    'careers.field.cvNote':'يرجى إرفاق سيرتك الذاتية — الصق رابطاً لها (جوجل درايف، دروب بوكس، لينكدإن) أعلاه.',
-    'careers.track1':'مسؤول حسابات أول (عن بعد)', 'careers.track2':'تطوير الأعمال (عن بعد)',
-    'careers.track3':'مدير علاقات (عن بعد)', 'careers.track4':'قائد فريق مسؤولي الحسابات (عن بعد)',
-    'careers.track5':'مدير علاقات أول (عن بعد)', 'careers.track6':'مسؤول أمن سيبراني (عن بعد)',
-    'careers.track7':'أخصائي ائتمان / CFA (عن بعد)',
-    'careers.submit':'إرسال الطلب', 'careers.processing':'جارٍ معالجة الطلب…',
-    'careers.mailto.note':'سيؤدي هذا إلى فتح تطبيق البريد الإلكتروني، موجهاً مسبقاً إلى الإدارة التشغيلية والموارد البشرية.',
-    'contact.eyebrow':'تواصل معنا', 'contact.title':'قنوات التواصل العالمية',
-    'contact.card1.title':'الإدارة التشغيلية',
-    'contact.card2.title':'الموارد البشرية', 'contact.card2.role':'الوظائف والتهيئة',
-    'contact.card3.title':'المبيعات والعقود', 'contact.card3.role':'إعداد العملاء والعقود',
-    'contact.card4.title':'استفسارات عامة', 'contact.card4.role':'الدعم الإداري',
-    'contact.hq.title':'مقرنا الرئيسي',
-    'contact.hq.p':'تقع أجنحة إنتركونسولتا مصر الإدارية والاستشارية القانونية المركزية استراتيجياً في قلب القاهرة الصناعي والتشريعي، مما يتيح التنسيق الفوري مع الوزارات الحكومية والمناطق الاستثمارية المؤسسية.',
-    'contact.hq.addr':'129 شارع عثمان بن عفان، أمام الكلية الحربية القديمة، النزهة، القاهرة، مصر.',
-    'contact.map.label':'موقعنا على خرائط جوجل', 'contact.map.cta':'عرض على خرائط جوجل ←',
-    'footer.linkedin':'تواصل معنا عبر لينكدإن', 'footer.top':'أعلى الصفحة',
-    'footer.sectors':'القطاعات', 'footer.careers':'بوابة الوظائف',
-  }
-};
-
-function applyI18n(lang){
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if(I18N[lang][key] !== undefined) el.textContent = I18N[lang][key];
-  });
-  document.querySelectorAll('[data-i18n-html]').forEach(el => {
-    const key = el.getAttribute('data-i18n-html');
-    if(I18N[lang][key] !== undefined) el.innerHTML = I18N[lang][key];
-  });
-  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-    const key = el.getAttribute('data-i18n-placeholder');
-    if(I18N[lang][key] !== undefined) el.setAttribute('placeholder', I18N[lang][key]);
-  });
-}
-
-function setLanguage(lang){
-  window.__lang = lang;
-  document.documentElement.setAttribute('lang', lang === 'ar' ? 'ar' : 'en');
-  document.body.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-  applyI18n(lang);
-  document.getElementById('langToggle').textContent = lang === 'ar' ? 'EN / عربي' : 'EN / عربي';
-  if(window.servicesModuleRef) window.servicesModuleRef.refresh();
-  if(window.chipRowModuleRef) window.chipRowModuleRef.refresh();
-}
-
-window.__lang = 'en';
-window.servicesModuleRef = servicesModule;
-window.chipRowModuleRef = chipRowModule;
-
-document.getElementById('langToggle').addEventListener('click', () => {
-  setLanguage(window.__lang === 'en' ? 'ar' : 'en');
-});
-
-setLanguage('en');
-
-/* ============================================================
-   GOOGLE TRANSLATE
-   ============================================================ */
-function googleTranslateElementInit(){
-  new google.translate.TranslateElement({
-    pageLanguage: 'en',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
-}
+  }, {threshold:.4});
+  counters.forEach(c => cio.observe(c));
 </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
